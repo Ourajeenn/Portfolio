@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ourajeenn — DevOps & Développeur Web</title>
+  <meta name="description" content="Portfolio de Jean-Rose Kouadjo OURA (Ourajeenn) - Diplômé Bachelor DevOps, Développeur Web & Cloud (Docker, Terraform, Ansible, CI/CD, React, Python, BMAD).">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Iconify Icons (Simple Icons & Lucide) -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" async></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== BARRE DE NAVIGATION ==================== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <!-- Logo / Marque -->
+        <a href="#accueil" class="nav__logo">
+          <span class="nav__logo-icon"><iconify-icon icon="lucide:terminal"></iconify-icon></span>
+          <span>Ourajeenn</span>
+          <span class="nav__logo-tag">DEV ➔ DEVOPS</span>
+        </a>
+
+        <!-- Menu Principal : Accueil | À propos | Compétences | Projets | Parcours | Contact -->
+        <div class="nav__links" id="navLinks" role="navigation" aria-label="Navigation principale">
+          <a href="#accueil" class="is-active">Accueil</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#competences">Compétences</a>
+          <a href="#projets">Projets</a>
+          <a href="#parcours">Parcours</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Zone Droite : Mode Sombre/Clair · GitHub · LinkedIn · Pinterest (ICÔNES SEULES, SANS TEXTE, SANS BOUTON CV) -->
+        <div class="nav__actions">
+          <!-- Toggle Mode Sombre / Clair -->
+          <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre / clair" title="Basculer le mode sombre / clair">
+            <iconify-icon id="themeIcon" icon="lucide:sun"></iconify-icon>
+          </button>
+
+          <!-- GitHub (Icône seule) -->
+          <a href="https://github.com/Ourajeenn" target="_blank" rel="noopener noreferrer" class="nav__icon-btn" title="GitHub (@Ourajeenn)" aria-label="GitHub">
+            <iconify-icon icon="simple-icons:github"></iconify-icon>
+          </a>
+
+          <!-- LinkedIn (Icône seule) -->
+          <a href="https://www.linkedin.com/in/jean-rose-oura-787847393/" target="_blank" rel="noopener noreferrer" class="nav__icon-btn" title="LinkedIn (Jean-Rose OURA)" aria-label="LinkedIn">
+            <iconify-icon icon="simple-icons:linkedin"></iconify-icon>
+          </a>
+
+          <!-- Pinterest (Icône seule) -->
+          <a href="https://www.pinterest.com/jeennrossraoul/" target="_blank" rel="noopener noreferrer" class="nav__icon-btn" title="Pinterest (@jeenn-ross raoul)" aria-label="Pinterest">
+            <iconify-icon icon="simple-icons:pinterest"></iconify-icon>
+          </a>
+        </div>
+
+        <!-- Bouton Burger Mobile -->
+        <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ==================== ACCUEIL (HERO) AVEC FAISCEAU LUMINEUX BLEU ==================== -->
+    <section class="hero section" id="accueil">
+      <!-- Faisceau Lumineux Bleu / Photon Beam & 3D Effect -->
+      <div class="hero__bg">
+        <div class="hero__light-beam"></div>
+        <div class="hero__light-core"></div>
+        <div data-us-project="lmSXlfVhWVrbN3qzElFu" data-us-scale="1" data-us-dpi="1.5" data-us-fps="60" data-us-lazyload="true" data-us-production="true" role="img" aria-label="Faisceau 3D lumineux" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
+      </div>
+      <div class="hero__mask"></div>
+
+      <div class="container">
+        <div class="hero__grid">
+          <!-- Contenu texte -->
+          <div class="hero__content reveal">
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              <span>Dev_web - DevOps ·</span>
+            </div>
+            
+            <h1 class="hero__title">
+              Du développement web à l'<span class="text-gradient">automatisation DevOps</span>.
+            </h1>
+            
+            <!-- Présentation exacte demandée -->
+            <p class="hero__subtitle">
+              Diplômé d'un Bachelor Administrateur DevOps, je conjugue compétences en développement web et culture DevOps (CI/CD, sécurité, monitoring) avec une approche pragmatique centrée sur l'expérience utilisateur et l'amélioration continue. J'intègre les outils d'IA générative dans mes projets via la méthode BMAD, pour allier rigueur méthodologique, bonnes pratiques et efficacité à chaque étape du développement. Mise en place d'un tunnel de vente sur systeme.io.
+            </p>
+
+            <div class="hero__actions">
+              <a href="assets/docs/CV_Jean_Rose_OURA.pdf" download="CV_JEAN-ROSE_KOUADJO_OURA.pdf" class="btn btn-primary">
+                <iconify-icon icon="lucide:download"></iconify-icon>
+                <span>Télécharger mon CV</span>
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                <iconify-icon icon="lucide:mail"></iconify-icon>
+                <span>Me contacter</span>
+              </a>
+              <a href="#projets" class="btn btn-ghost">
+                <iconify-icon icon="lucide:folder-git-2"></iconify-icon>
+                <span>Mes projets</span>
+              </a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <div class="hero__stat-val text-gradient">Dev & Web</div>
+                <div class="hero__stat-lbl">React · TypeScript · Python</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-val text-gradient">CI / CD & IaC</div>
+                <div class="hero__stat-lbl">Docker · Terraform · Ansible</div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-val text-gradient">Méthode BMAD</div>
+                <div class="hero__stat-lbl">IA Générative & Agile</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal Live CI/CD Visual -->
+          <div class="hero__visual reveal">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="terminal-dot terminal-dot--red"></span>
+                  <span class="terminal-dot terminal-dot--yellow"></span>
+                  <span class="terminal-dot terminal-dot--green"></span>
+                </div>
+                <div class="terminal-title">ourajeenn@devops: ~/workspace</div>
+                <div class="badge badge--cyan" style="font-size:0.65rem;">PIPELINE ACTIVE</div>
+              </div>
+              <div class="terminal-body">
+                <div><span class="term-cmd">$ git push origin main</span></div>
+                <div><span class="term-dim">→ Pushing commits to GitHub (Ourajeenn)...</span></div>
+                <div>&nbsp;</div>
+                <div><span class="term-cmd">$ gh workflow run</span> <span class="term-flag">devops-deploy.yml</span></div>
+                <div><span class="term-success">✓</span> [Lint & Tests] React / Vite / TypeScript passed <span class="term-dim">(0.6s)</span></div>
+                <div><span class="term-success">✓</span> [Docker Build] Multi-stage build <span class="term-flag">ourajeenn/app:latest</span> <span class="term-dim">(2.8s)</span></div>
+                <div><span class="term-success">✓</span> [IaC Terraform] AWS EC2 / Security Groups provisioned <span class="term-dim">(1.9s)</span></div>
+                <div><span class="term-success">✓</span> [Ansible Config] Environment & dependencies configured <span class="term-dim">(1.4s)</span></div>
+                <div><span class="term-success">✓</span> [Continuous Deploy] Netlify & Vercel live production OK</div>
+                <div>&nbsp;</div>
+                <div><span class="term-success">● Statut : 100% OPÉRATIONNEL & DÉPLOYÉ</span><span class="term-cursor"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== À PROPOS ==================== -->
+    <section class="section section--alt" id="a-propos">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label">Profil & Présentation</div>
+          <h2 class="section-title">À propos de <span class="text-gradient">Jean-Rose OURA</span></h2>
+          <p class="section-desc">Développeur logiciel & administrateur DevOps combinant rigueur technique, sens du design et intégration des technologies d'IA.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              <strong>Diplômé d'un Bachelor DevOps</strong> à l'Ecole-IT (Orléans), je conjugue compétences en <strong>développement web</strong> et <strong>culture DevOps</strong> (CI/CD, sécurité, monitoring) avec une approche pragmatique centrée sur l'expérience utilisateur et l'amélioration continue.
+            </p>
+            <p>
+              J'intègre les <strong>outils d'IA générative</strong> (Claude-code, Antigravity, Aura) dans mes projets via la <strong>méthode BMAD</strong>, pour allier rigueur méthodologique, bonnes pratiques et efficacité à chaque étape du développement.
+            </p>
+            <p>
+              Fort d'expériences en entreprise notamment chez <em>MyRH</em> (optimisation SEO +50% et mise en place d'un tunnel de vente sur <em>systeme.io</em> avec +30% de conversion) et chez <em>Ebenyx Technologie</em>, je conçois des solutions digitales fiables, évolutives et centrées sur l'utilisateur.
+            </p>
+
+            <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap;">
+              <a href="https://github.com/Ourajeenn" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub">
+                <iconify-icon icon="simple-icons:github"></iconify-icon>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/jean-rose-oura-787847393/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="LinkedIn">
+                <iconify-icon icon="simple-icons:linkedin"></iconify-icon>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://www.pinterest.com/jeennrossraoul/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Pinterest">
+                <iconify-icon icon="simple-icons:pinterest"></iconify-icon>
+                <span>Pinterest</span>
+              </a>
+              <a href="assets/docs/CV_Jean_Rose_OURA.pdf" download="CV_JEAN-ROSE_KOUADJO_OURA.pdf" class="btn btn-primary">
+                <iconify-icon icon="lucide:file-text"></iconify-icon>
+                <span>CV PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Piliers / Atouts majeurs -->
+          <div class="traits-grid reveal" style="margin-top:0;">
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="simple-icons:react"></iconify-icon></div>
+              <h3 class="trait-card__title">Développement Web & APIs</h3>
+              <p class="trait-card__desc">HTML, CSS, JavaScript, TypeScript, React.js, Vite, Python, FastAPI, Supabase, PostgreSQL et Vercel.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="simple-icons:docker"></iconify-icon></div>
+              <h3 class="trait-card__title">DevOps & Infrastructure as Code</h3>
+              <p class="trait-card__desc">Docker, Terraform, Ansible, GitLab CI/CD, GitHub Actions, Linux et déploiement continu.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="simple-icons:anthropic"></iconify-icon></div>
+              <h3 class="trait-card__title">IA Générative & Méthode BMAD</h3>
+              <p class="trait-card__desc">Accélération et fiabilisation des projets via Claude-code, Antigravity, Aura et rigueur méthodique.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:funnel"></iconify-icon></div>
+              <h3 class="trait-card__title">Tunnels de Vente & No-Code</h3>
+              <p class="trait-card__desc">Mise en place de tunnels de vente performants sur systeme.io, GoodBarber, Webflow et méthodes Agiles.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== ATOUTS DE PERSONNALITÉ ==================== -->
+        <div style="margin-top:60px;" class="reveal">
+          <div class="about__subheading">
+            <iconify-icon icon="lucide:shield-check" style="color:var(--cyan);"></iconify-icon>
+            <span>Mes Atouts de Personnalité</span>
+          </div>
+          <div class="traits-grid">
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:sparkles"></iconify-icon></div>
+              <h4 class="trait-card__title">Autonome & Autodidacte</h4>
+              <p class="trait-card__desc">Curiosité naturelle et capacité rapide d'assimilation des nouvelles technologies, architectures cloud et outils d'automatisation.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:users"></iconify-icon></div>
+              <h4 class="trait-card__title">Intégration & Esprit d'Équipe</h4>
+              <p class="trait-card__desc">Excellente communication, bienveillance et collaboration fluide en méthodologie Agile (Scrum/Kanban) avec développeurs et ops.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:check-circle-2"></iconify-icon></div>
+              <h4 class="trait-card__title">Rigueur & Bonnes Pratiques</h4>
+              <p class="trait-card__desc">Sens poussé du détail, clean code, documentation technique soignée et conformité aux standards de sécurité et de qualité.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:target"></iconify-icon></div>
+              <h4 class="trait-card__title">Pragmatisme & Orientation Résultats</h4>
+              <p class="trait-card__desc">Focus sur la valeur concrète apportée aux utilisateurs : interfaces intuitives, rapidité de livraison et stabilité des services.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== CENTRES D'INTÉRÊT ==================== -->
+        <div style="margin-top:60px;" class="reveal">
+          <div class="about__subheading">
+            <iconify-icon icon="lucide:heart" style="color:var(--cyan);"></iconify-icon>
+            <span>Centres d'Intérêt & Passions</span>
+          </div>
+          <div class="traits-grid">
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="simple-icons:pinterest"></iconify-icon></div>
+              <h4 class="trait-card__title">Dessin, Manga & Création Graphique</h4>
+              <p class="trait-card__desc">Passion pour l'art visuel, les mangas, le character design et la création graphique (Figma, Photoshop, Canva, Pinterest : @jeenn-ross raoul).</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:utensils"></iconify-icon></div>
+              <h4 class="trait-card__title">Cuisine & Créativité</h4>
+              <p class="trait-card__desc">Plaisir de cuisiner et tester de nouvelles recettes, alliant rigueur, sens du timing et créativité.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:activity"></iconify-icon></div>
+              <h4 class="trait-card__title">Sport & Dépassement de Soi</h4>
+              <p class="trait-card__desc">Pratique sportive régulière pour maintenir l'énergie, la discipline, la persévérance et un esprit compétitif sain.</p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-card__icon"><iconify-icon icon="lucide:book-open"></iconify-icon></div>
+              <h4 class="trait-card__title">Lecture & Écriture</h4>
+              <p class="trait-card__desc">Veille continue sur l'univers tech, lecture d'ouvrages variés et rédaction de contenus structurés et synthétiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILL TREE (ARBRE DE TALENTS FIXE & INTERACTIF) ==================== -->
+    <!-- ==================== ARBRE DE COMPÉTENCES (TALENTS FIXES & INTERACTIFS) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <!-- ==================== SKILL TREE (ARBRE DE COMPÉTENCES RPG) ==================== -->
+    <section class="section section--skilltree" id="competences">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label"><iconify-icon icon="ph:sparkle-duotone"></iconify-icon> Système de Progression &amp; Savoir-Faire</div>
+          <h2 class="section-title">Arbre de <span class="text-gradient">Compétences</span></h2>
+          <p class="section-desc">Arbre de talents interactif. Cliquez sur chaque nœud pour débloquer sa fiche technique, outils et projets associés.</p>
+        </div>
+
+        <div class="st-wrapper reveal">
+          <!-- HUD Header -->
+          <div class="st-hud">
+            <div class="st-hud__left">
+              <div class="st-hud__badge">
+                <span class="st-hud__badge-icon">🃏</span>
+                <div>
+                  <div class="st-hud__badge-title">POINTS DE TALENT</div>
+                  <div class="st-hud__badge-val">21 / 21 ACTIFS</div>
+                </div>
+              </div>
+              <div class="st-hud__rank">
+                <span class="st-hud__rank-dot"></span>
+                <span>ARCHITECTE : <strong>OURAJEENN · BACHELOR DEVOPS &amp; FULL-STACK</strong></span>
+              </div>
+            </div>
+            <div class="st-hud__filters">
+              <button class="st-filter is-active" data-filter="all"><iconify-icon icon="simple-icons:diagramsdotnet"></iconify-icon> Tout l'Arbre</button>
+              <button class="st-filter" data-filter="devops"><iconify-icon icon="simple-icons:docker" style="color:#f97316;"></iconify-icon> DevOps &amp; SecOps</button>
+              <button class="st-filter" data-filter="code"><iconify-icon icon="simple-icons:react" style="color:#38bdf8;"></iconify-icon> Code &amp; 3D</button>
+              <button class="st-filter" data-filter="ai"><iconify-icon icon="simple-icons:anthropic" style="color:#a855f7;"></iconify-icon> IA &amp; Stratégie</button>
+            </div>
+          </div>
+
+          <!-- Canvas -->
+          <div class="st-viewport" id="stViewport">
+            <div class="st-canvas" id="stCanvas">
+              <svg class="st-svg" id="stSvg" aria-hidden="true"></svg>
+
+              <!-- ─── OURAJEENN NEXUS ─── -->
+              <div class="st-nexus" id="stNexus"
+                   data-id="nexus" data-clan="nexus"
+                   data-title="OURAJEENN — JEAN-ROSE KOUADJO OURA"
+                   data-subtitle="Architecte DevOps · Développeur Full-Stack · IA Générative"
+                   data-level="100" data-color="#f97316" data-icon="simple-icons:devdotto"
+                   data-desc="Architecte logiciel et créateur. Convergence synergique entre l'infrastructure cloud résiliente, l'ingénierie full-stack moderne (React 19 / Three.js / FastAPI) et l'intelligence artificielle (BMAD &amp; RAG)."
+                   data-skills="Culture DevOps, CI/CD GitHub &amp; GitLab, Architecture Full-Stack, Méthode BMAD, Semgrep DevSecOps, Monitoring Prometheus/Grafana, Kubernetes"
+                   data-projects="Wakkany, Cuisine Ensemble, PharmaGO, BattleQuest, JustEcoBox, IF-EDUPRIME">
+                <div class="st-nexus__hex">
+                  <div class="st-nexus__hex-inner">
+                    <iconify-icon icon="simple-icons:devdotto" class="st-nexus__icon"></iconify-icon>
+                    <span class="st-nexus__text">OURAJEENN</span>
+                    <span class="st-nexus__sub">DEVOPS</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ═══════════════════════════════════════════════════
+                   CLAN 1 — BÂTISSEURS (DevOps & DevSecOps) Y≈115
+                   ═══════════════════════════════════════════════════ -->
+              <div class="st-clan-tag st-clan-tag--devops">
+                <span class="st-clan-tag__title">CLAN DES BÂTISSEURS</span>
+                <span class="st-clan-tag__sub">INFRASTRUCTURE · CI/CD · DEVSECOPS · CLOUD</span>
+              </div>
+
+              <!-- Linux Tier-1 -->
+              <div class="st-node st-node--label-bottom" data-id="linux" data-clan="devops" data-tier="1" data-x="195" data-y="115"
+                   data-title="Linux &amp; Scripting Bash" data-subtitle="Fondations Systèmes &amp; Sécurité"
+                   data-level="40" data-color="#f97316" data-icon="simple-icons:linux"
+                   data-desc="Administration système Linux (Debian, Ubuntu), scripts Bash, services systemd, SSH, permissions UNIX et durcissement de sécurité."
+                   data-skills="Bash, Systemd, SSH, Permissions UNIX, Cron jobs, Nginx config"
+                   data-projects="Tous les serveurs &amp; conteneurs de production">
+                <div class="st-node__ring"><span class="st-node__num">1</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:linux"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">LINUX</span><span class="st-node__sub">BASH &amp; SYSTEMD</span></div>
+              </div>
+
+              <!-- Docker Tier-2 -->
+              <div class="st-node st-node--label-bottom" data-id="docker" data-clan="devops" data-tier="2" data-x="335" data-y="115"
+                   data-title="Docker &amp; Conteneurisation" data-subtitle="Isolation &amp; Packaging"
+                   data-level="60" data-color="#2496ed" data-icon="simple-icons:docker"
+                   data-desc="Dockerfiles multi-stage légers, Docker Compose pour staging, gestion des volumes et des réseaux privés."
+                   data-skills="Multi-stage builds, Docker Compose, Docker Hub, Optimisation images"
+                   data-projects="Wakkany, Cuisine Ensemble, PharmaGO, BattleQuest">
+                <div class="st-node__ring"><span class="st-node__num">2</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:docker"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">DOCKER</span><span class="st-node__sub">CONTENEURS</span></div>
+              </div>
+
+              <!-- IaC Terraform Tier-3 TOP -->
+              <div class="st-node st-node--label-top" data-id="iac" data-clan="devops" data-tier="3" data-x="480" data-y="70"
+                   data-title="Terraform &amp; Ansible" data-subtitle="Infrastructure as Code"
+                   data-level="25" data-color="#7b42bc" data-icon="simple-icons:terraform"
+                   data-desc="Provisioning cloud avec Terraform, automatisation des configurations de VM avec Ansible."
+                   data-skills="Terraform HCL, State Management, Playbooks Ansible, Inventaires dynamiques"
+                   data-projects="Infrastructures Cloud &amp; Environnements Staging">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:terraform"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">IaC / TERRAFORM</span><span class="st-node__sub">INFRASTRUCTURE</span></div>
+              </div>
+
+              <!-- CI/CD Tier-3 BOTTOM -->
+              <div class="st-node st-node--label-bottom" data-id="cicd" data-clan="devops" data-tier="3" data-x="480" data-y="160"
+                   data-title="CI/CD GitHub Actions &amp; GitLab CI" data-subtitle="Automatisation &amp; Delivery"
+                   data-level="30" data-color="#2088ff" data-icon="simple-icons:githubactions"
+                   data-desc="Pipelines CI/CD avec GitHub Actions et GitLab CI : linting, tests Vitest, E2E Playwright, build Docker, déploiement Netlify/Fly.io."
+                   data-skills="Workflows YAML, Matrix Builds, Secrets, Cache optimization, GitLab Runners"
+                   data-projects="BattleQuest, Wakkany, Cuisine Ensemble">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:githubactions"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">CI / CD</span><span class="st-node__sub">GITHUB &amp; GITLAB</span></div>
+              </div>
+
+              <!-- Semgrep Tier-3 TOP -->
+              <div class="st-node st-node--label-top" data-id="semgrep" data-clan="devops" data-tier="3" data-x="620" data-y="70"
+                   data-title="Semgrep &amp; DevSecOps" data-subtitle="Analyse Statique SAST"
+                   data-level="60" data-color="#10b981" data-icon="simple-icons:semgrep"
+                   data-desc="SAST automatisé avec Semgrep dans les pipelines CI/CD : vulnérabilités OWASP, règles personnalisées, scan de secrets."
+                   data-skills="Semgrep CLI, SAST Rulesets, OWASP Top 10, Détection vulnérabilités, Scan de secrets"
+                   data-projects="Wakkany (Audit sécurité), Cuisine Ensemble">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:semgrep"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">SEMGREP</span><span class="st-node__sub">DEVSECOPS / SAST</span></div>
+              </div>
+
+              <!-- Monitoring Semi-Boss Tier-4 -->
+              <div class="st-node st-node--semiboss st-node--label-bottom" data-id="monitoring" data-clan="devops" data-tier="4" data-x="790" data-y="115"
+                   data-title="Prometheus &amp; Grafana" data-subtitle="Observabilité &amp; Alertes"
+                   data-level="30" data-color="#e6522c" data-icon="simple-icons:prometheus"
+                   data-desc="Stack monitoring de production : métriques Prometheus (9090), dashboards Grafana (3001), alertes automatiques."
+                   data-skills="PromQL, Grafana Dashboards, Alertmanager, Node Exporter"
+                   data-projects="Cuisine Ensemble (Stack Monitoring)">
+                <div class="st-node__ring"><span class="st-node__badge-boss">⚔️ SEMI-BOSS</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:prometheus"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">OBSERVABILITÉ</span><span class="st-node__sub">PROM &amp; GRAFANA</span></div>
+              </div>
+
+              <!-- Kubernetes Boss Tier-5 -->
+              <div class="st-node st-node--boss st-node--label-bottom" data-id="k8s" data-clan="devops" data-tier="5" data-x="960" data-y="115"
+                   data-title="Kubernetes &amp; Cloud Architecture" data-subtitle="Orchestration de Conteneurs"
+                   data-level="20" data-color="#326ce5" data-icon="simple-icons:kubernetes"
+                   data-desc="Clusters Kubernetes : Deployments, StatefulSets, Ingress, Helm charts, HPA, auto-scaling."
+                   data-skills="Kubectl, Helm, Ingress Controller, ConfigMaps, Secrets, HPA"
+                   data-projects="Cuisine Ensemble (Scripts K8s de production)">
+                <div class="st-node__ring"><span class="st-node__badge-boss">👑 BOSS SUPRÊME</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:kubernetes"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">KUBERNETES</span><span class="st-node__sub">ORCHESTRATION</span></div>
+              </div>
+
+
+              <!-- ═══════════════════════════════════════════════════
+                   CLAN 2 — GUERRIERS (Code & 3D) Y≈345
+                   ═══════════════════════════════════════════════════ -->
+              <div class="st-clan-tag st-clan-tag--code">
+                <span class="st-clan-tag__title">CLAN DES GUERRIERS</span>
+                <span class="st-clan-tag__sub">FULL-STACK · APIS · 3D WEBGL · TEMPS RÉEL</span>
+              </div>
+
+              <!-- TypeScript Tier-1 -->
+              <div class="st-node st-node--label-bottom" data-id="javascript" data-clan="code" data-tier="1" data-x="195" data-y="345"
+                   data-title="JavaScript ES6+ &amp; TypeScript" data-subtitle="Langage &amp; Typage Statique"
+                   data-level="40" data-color="#3178c6" data-icon="simple-icons:typescript"
+                   data-desc="TypeScript et JavaScript moderne : async/await, typage strict, génériques, DOM et Web APIs avancées."
+                   data-skills="TypeScript 5, Generics, Closures, DOM APIs, Web Workers, Async programming"
+                   data-projects="Wakkany, PharmaGO, IF-EDUPRIME, JustEcoBox">
+                <div class="st-node__ring"><span class="st-node__num">1</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:typescript"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">TYPESCRIPT</span><span class="st-node__sub">JS ES6+ STRICT</span></div>
+              </div>
+
+              <!-- React Tier-2 TOP -->
+              <div class="st-node st-node--label-top" data-id="react" data-clan="code" data-tier="2" data-x="335" data-y="300"
+                   data-title="React 18/19 &amp; TanStack Start" data-subtitle="Interfaces &amp; SSR Moderne"
+                   data-level="40" data-color="#61dafb" data-icon="simple-icons:react"
+                   data-desc="Applications React avec Vite, TanStack Start (SSR), Hooks avancés, TanStack Query, code splitting."
+                   data-skills="React 19, Hooks custom, Context API, TanStack Start/Query, Vite 7"
+                   data-projects="Wakkany, Cuisine Ensemble, PharmaGO, IF-EDUPRIME">
+                <div class="st-node__ring"><span class="st-node__num">2</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:react"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">REACT 19</span><span class="st-node__sub">SSR &amp; TANSTACK</span></div>
+              </div>
+
+              <!-- FastAPI Tier-2 BOTTOM -->
+              <div class="st-node st-node--label-bottom" data-id="python-backend" data-clan="code" data-tier="2" data-x="335" data-y="390"
+                   data-title="Python &amp; FastAPI" data-subtitle="APIs REST Asynchrones"
+                   data-level="30" data-color="#009688" data-icon="simple-icons:fastapi"
+                   data-desc="Microservices async avec FastAPI : Pydantic, Swagger auto-généré, JWT auth, intégration d'algorithmes."
+                   data-skills="FastAPI, Pydantic, Uvicorn, Asyncio, REST APIs, Microservices"
+                   data-projects="Services de calcul &amp; APIs de données">
+                <div class="st-node__ring"><span class="st-node__num">2</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:fastapi"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">FASTAPI</span><span class="st-node__sub">PYTHON ASYNC</span></div>
+              </div>
+
+              <!-- PostgreSQL Tier-3 TOP -->
+              <div class="st-node st-node--label-top" data-id="postgres" data-clan="code" data-tier="3" data-x="490" data-y="300"
+                   data-title="PostgreSQL 16 &amp; Supabase" data-subtitle="BDD Relationnelle &amp; RLS"
+                   data-level="55" data-color="#3ecf8e" data-icon="simple-icons:postgresql"
+                   data-desc="PostgreSQL 16 : SQL complexe, RLS, Supabase Realtime Websockets, Auth OAuth, Edge Functions Deno."
+                   data-skills="PostgreSQL 16, Supabase RLS, Realtime Websockets, Edge Functions, SQL migrations"
+                   data-projects="Wakkany, Cuisine Ensemble, PharmaGO, IF-EDUPRIME">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:postgresql"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">POSTGRESQL</span><span class="st-node__sub">SUPABASE RLS</span></div>
+              </div>
+
+              <!-- Selenium Tier-3 BOTTOM -->
+              <div class="st-node st-node--label-bottom" data-id="scraping" data-clan="code" data-tier="3" data-x="490" data-y="390"
+                   data-title="Web Scraping &amp; Python Automation" data-subtitle="Extraction de Données"
+                   data-level="30" data-color="#43b02a" data-icon="simple-icons:selenium"
+                   data-desc="Selenium + BeautifulSoup : scraping dynamique, parsing de pharmacies de garde toutes les 6h, géolocalisation."
+                   data-skills="Selenium WebDriver, BeautifulSoup4, Headless Browsers, Data pipelines"
+                   data-projects="PharmaGO (Moteur de scraping)">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:selenium"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">SELENIUM</span><span class="st-node__sub">SCRAPING &amp; BOTS</span></div>
+              </div>
+
+              <!-- Node.js Semi-Boss Tier-4 -->
+              <div class="st-node st-node--semiboss st-node--label-bottom" data-id="node-fullstack" data-clan="code" data-tier="4" data-x="700" data-y="345"
+                   data-title="Node.js 24 &amp; Architecture Web" data-subtitle="Serveurs &amp; PWA"
+                   data-level="20" data-color="#68a063" data-icon="simple-icons:nodedotjs"
+                   data-desc="Node.js 24 avec Express et Deno Edge Functions, PWA offline avec Service Workers, WebSockets."
+                   data-skills="Node.js 24, Express, Deno, PWA Service Workers, Cache offline, WebSockets"
+                   data-projects="Wakkany, Cuisine Ensemble, IF-EDUPRIME">
+                <div class="st-node__ring"><span class="st-node__badge-boss">⚔️ SEMI-BOSS</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:nodedotjs"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">NODE.JS 24</span><span class="st-node__sub">PWA &amp; SERVEURS</span></div>
+              </div>
+
+              <!-- Three.js Boss Tier-5 -->
+              <div class="st-node st-node--boss st-node--label-bottom" data-id="threejs" data-clan="code" data-tier="5" data-x="960" data-y="345"
+                   data-title="Three.js &amp; 3D Gamification" data-subtitle="WebGL &amp; Moteur RPG"
+                   data-level="15" data-color="#61dafb" data-icon="simple-icons:threedotjs"
+                   data-desc="Expériences 3D avec Three.js et React Three Fiber : modèles GLTF/GLB, caméras, shaders, quêtes XP, combats RPG."
+                   data-skills="Three.js, React Three Fiber, GLTF animations, Shaders WebGL, Moteur Quêtes XP"
+                   data-projects="Wakkany (Univers 3D), BattleQuest">
+                <div class="st-node__ring"><span class="st-node__badge-boss">👑 BOSS SUPRÊME</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:threedotjs"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">THREE.JS 3D</span><span class="st-node__sub">GAMIFICATION</span></div>
+              </div>
+
+
+              <!-- ═══════════════════════════════════════════════════
+                   CLAN 3 — STRATÈGES (IA, BMAD, RAG) Y≈575
+                   ═══════════════════════════════════════════════════ -->
+              <div class="st-clan-tag st-clan-tag--ai">
+                <span class="st-clan-tag__title">CLAN DES STRATÈGES</span>
+                <span class="st-clan-tag__sub">IA GÉNÉRATIVE · BMAD · RAG · DESIGN · CROISSANCE</span>
+              </div>
+
+              <!-- Figma Tier-1 -->
+              <div class="st-node st-node--label-bottom" data-id="figma" data-clan="ai" data-tier="1" data-x="195" data-y="575"
+                   data-title="Figma &amp; Design Systèmes UI/UX" data-subtitle="Conception &amp; Prototypage"
+                   data-level="45" data-color="#f24e1e" data-icon="simple-icons:figma"
+                   data-desc="Maquettes haute-fidélité Figma, design systems modulaires, composants atomiques, prototypage interactif."
+                   data-skills="Figma Auto-layout, Design Tokens, Prototypage interactif, Excalidraw, Canva"
+                   data-projects="Wakkany, JustEcoBox, PharmaGO, IF-EDUPRIME">
+                <div class="st-node__ring"><span class="st-node__num">1</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:figma"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">FIGMA</span><span class="st-node__sub">DESIGN UI/UX</span></div>
+              </div>
+
+              <!-- Tunnels & SEO Tier-2 -->
+              <div class="st-node st-node--label-bottom" data-id="growth" data-clan="ai" data-tier="2" data-x="335" data-y="575"
+                   data-title="Tunnels de Vente &amp; SEO" data-subtitle="Conversion &amp; Trafic"
+                   data-level="70" data-color="#10b981" data-icon="simple-icons:googleanalytics"
+                   data-desc="Tunnels conversion systeme.io (+30% chez MyRH), copywriting, SEO (+50% trafic), email automations, A/B testing."
+                   data-skills="systeme.io, +30% Conversion, SEO +50%, Email Automations, A/B Testing"
+                   data-projects="MyRH Solutions, Plateformes e-learning">
+                <div class="st-node__ring"><span class="st-node__num">2</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">TUNNELS &amp; SEO</span><span class="st-node__sub">SYSTEME.IO (+70%)</span></div>
+              </div>
+
+              <!-- Agile Tier-3 TOP -->
+              <div class="st-node st-node--label-top" data-id="agile" data-clan="ai" data-tier="3" data-x="480" data-y="530"
+                   data-title="Méthodes Agiles &amp; No-Code" data-subtitle="Scrum / Kanban &amp; Webflow"
+                   data-level="55" data-color="#06b6d4" data-icon="simple-icons:clickup"
+                   data-desc="Pilotage Scrum/Kanban avec ClickUp et Trello, landing pages Webflow, apps no-code GoodBarber."
+                   data-skills="Scrum, Kanban, ClickUp, Trello, Webflow, GoodBarber"
+                   data-projects="Coordination projets &amp; MyRH">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:clickup"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">AGILE &amp; TOOLS</span><span class="st-node__sub">CLICKUP &amp; TRELLO</span></div>
+              </div>
+
+              <!-- RAG Tier-3 TOP -->
+              <div class="st-node st-node--learning st-node--label-top" data-id="rag" data-clan="ai" data-tier="3" data-x="620" data-y="530"
+                   data-title="RAG &amp; Bases Vectorielles (En cours)" data-subtitle="Retrieval-Augmented Generation"
+                   data-level="10" data-color="#10b981" data-icon="simple-icons:langchain"
+                   data-desc="Architecture RAG en cours : chunking, embeddings, pgvector / ChromaDB, LangChain, recherche sémantique hybride."
+                   data-skills="RAG Architecture, Vector DBs, pgvector, Embeddings, LangChain"
+                   data-projects="Systèmes Q&amp;R augmentés &amp; IA Leslie">
+                <div class="st-node__ring"><span class="st-node__badge-learning">🌱 EN COURS</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:langchain"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">RAG &amp; VECTORS</span><span class="st-node__sub">LLM CONTEXT</span></div>
+              </div>
+
+              <!-- Gen AI Tier-3 BOTTOM -->
+              <div class="st-node st-node--label-bottom" data-id="genai" data-clan="ai" data-tier="3" data-x="550" data-y="620"
+                   data-title="IA Générative &amp; LLMs" data-subtitle="Claude, Antigravity &amp; Prompt Engineering"
+                   data-level="70" data-color="#cc785c" data-icon="simple-icons:anthropic"
+                   data-desc="Orchestration de LLMs (Claude 3.7, OpenAI, Aura) : génération de code, agents autonomes, refactoring assisté."
+                   data-skills="Prompt Engineering, Claude Code, Antigravity Agent, Aura, API LLM"
+                   data-projects="PharmaGO (IA Leslie), Wakkany, Cuisine Ensemble">
+                <div class="st-node__ring"><span class="st-node__num">3</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:anthropic"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">GEN AI</span><span class="st-node__sub">CLAUDE &amp; AGENTS</span></div>
+              </div>
+
+              <!-- BMAD Semi-Boss Tier-4 -->
+              <div class="st-node st-node--semiboss st-node--label-bottom" data-id="bmad" data-clan="ai" data-tier="4" data-x="790" data-y="575"
+                   data-title="Méthode BMAD" data-subtitle="Business Model AI-Driven"
+                   data-level="65" data-color="#a855f7" data-icon="simple-icons:diagramsdotnet"
+                   data-desc="Framework BMAD : alignement besoins métier, modélisation IA, structuration modulaire, delivery sans dette technique."
+                   data-skills="Méthode BMAD, Product Management IA, Architecture Modulaire, Delivery Agile"
+                   data-projects="Tous les projets récents du portfolio">
+                <div class="st-node__ring"><span class="st-node__badge-boss">⚔️ SEMI-BOSS</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:diagramsdotnet"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">MÉTHODE BMAD</span><span class="st-node__sub">IA &amp; RIGUEUR</span></div>
+              </div>
+
+              <!-- Full-Stack IA Boss Tier-5 -->
+              <div class="st-node st-node--boss st-node--label-bottom" data-id="ai-nexus" data-clan="ai" data-tier="5" data-x="960" data-y="575"
+                   data-title="Agentic AI &amp; Synergie Globale" data-subtitle="DevOps + Dev + IA Orchestrés"
+                   data-level="75" data-color="#ec4899" data-icon="simple-icons:probot"
+                   data-desc="Orchestration de bout en bout : infrastructure cloud, frontend 3D immersif, agents IA autonomes et tunnels de conversion."
+                   data-skills="Systèmes Agentiques, Vision Holistique Produit, Automatisation Totale, ROI Métier"
+                   data-projects="Portfolio &amp; Écosystème de projets complet">
+                <div class="st-node__ring"><span class="st-node__badge-boss">👑 BOSS SUPRÊME</span></div>
+                <div class="st-node__core"><iconify-icon icon="simple-icons:probot"></iconify-icon></div>
+                <div class="st-node__meta"><span class="st-node__name">FULL-STACK IA</span><span class="st-node__sub">NEXUS ULTIME</span></div>
+              </div>
+
+            </div><!-- /.st-canvas -->
+          </div><!-- /.st-viewport -->
+
+          <!-- Modal HUD -->
+          <div class="st-modal" id="stModal" aria-hidden="true">
+            <div class="st-modal__backdrop" id="stModalBackdrop"></div>
+            <div class="st-modal__card">
+              <button class="st-modal__close" id="stModalClose" aria-label="Fermer"><iconify-icon icon="ph:x-bold"></iconify-icon></button>
+              <div class="st-modal__header">
+                <div class="st-modal__icon-wrap" id="stModalIconWrap"><iconify-icon id="stModalIcon" icon="simple-icons:devdotto"></iconify-icon></div>
+                <div class="st-modal__title-box">
+                  <div class="st-modal__clan-badge" id="stModalClan">DEVOPS</div>
+                  <h3 class="st-modal__title" id="stModalTitle">Compétence</h3>
+                  <div class="st-modal__sub" id="stModalSub">Sous-titre</div>
+                </div>
+              </div>
+              <div class="st-modal__mastery">
+                <div class="st-modal__mastery-labels"><span>NIVEAU DE MAÎTRISE</span><strong id="stModalPct">50%</strong></div>
+                <div class="st-modal__mastery-track"><div class="st-modal__mastery-bar" id="stModalBar"></div></div>
+              </div>
+              <div class="st-modal__section">
+                <div class="st-modal__section-title"><iconify-icon icon="simple-icons:gitbook"></iconify-icon> Savoir-Faire Concret</div>
+                <p class="st-modal__desc" id="stModalDesc"></p>
+              </div>
+              <div class="st-modal__section">
+                <div class="st-modal__section-title"><iconify-icon icon="simple-icons:gnubash"></iconify-icon> Outils &amp; Compétences Clés</div>
+                <div class="st-modal__tags" id="stModalSkills"></div>
+              </div>
+              <div class="st-modal__section">
+                <div class="st-modal__section-title"><iconify-icon icon="simple-icons:github"></iconify-icon> Projets Associés</div>
+                <div class="st-modal__tags st-modal__tags--projects" id="stModalProjects"></div>
+              </div>
+              <div class="st-modal__footer">
+                <a href="#projets" class="btn btn-primary btn-sm"><iconify-icon icon="simple-icons:github"></iconify-icon> Explorer les projets</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.st-wrapper -->
+      </div>
+    </section>
+
+    <!-- ==================== PROJETS DÉTAILLÉS (AVEC IMAGES RÉELLES & TRANSITIONS SURVOL) ==================== -->
+    <!-- ==================== PROJETS DÉTAILLÉS (AVEC IMAGES RÉELLES & TRANSITIONS SURVOL) ==================== -->
+    <section class="section section--alt" id="projets">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label">Réalisations & Dépôts GitHub</div>
+          <h2 class="section-title">Mes <span class="text-gradient">Projets</span></h2>
+          <p class="section-desc">Explications détaillées de mes architectures logicielles, fonctionnalités clés et captures réelles des projets.</p>
+        </div>
+
+        <div class="projects__grid">
+          <!-- Projet 1 : Plateforme-gamefication_wakkany avec Double Image au Survol -->
+          <div class="project-card reveal">
+            <div class="project-card__preview">
+              <img src="assets/images/wakkany_1.jpg" alt="Aperçu Wakkany — Écran d'accueil" class="project-card__img project-card__img--primary" loading="lazy">
+              <img src="assets/images/wakkany_2.jpg" alt="Aperçu Wakkany — Univers & Combattants" class="project-card__img project-card__img--hover" loading="lazy">
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--cyan project-card__preview-badge">React 18 · Supabase · 3D · PWA</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">⚔️ Wakkany — Gamification Culturelle & Familiale</h3>
+              <p class="project-card__desc">
+                Plateforme web interactive immersive qui transforme l'apprentissage des origines, de la culture et de l'histoire en une aventure ludique et engageante.
+              </p>
+              
+              <!-- Points clés issus du README -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="simple-icons:threedotjs" style="vertical-align:-2px;color:#fff;"></iconify-icon> Fonctionnalités &amp; Architecture :</strong><br>
+                <iconify-icon icon="simple-icons:threedotjs" style="vertical-align:-2px;color:#7df3e1;"></iconify-icon> <strong>Profil &amp; Avatar 3D</strong> : Rendu 3D temps réel avec <em>Three.js</em> &amp; <em>React Three Fiber</em>.<br>
+                <iconify-icon icon="simple-icons:supabase" style="vertical-align:-2px;color:#3ecf8e;"></iconify-icon> <strong>Multijoueur Temps Réel</strong> : Salons synchronisés via <em>Supabase Realtime (WebSockets)</em>.<br>
+                <iconify-icon icon="simple-icons:gamemaker" style="vertical-align:-2px;color:#f59e0b;"></iconify-icon> <strong>Arbre de compétences &amp; Quêtes</strong> : XP, déblocage de talents et missions temporisées.<br>
+                <iconify-icon icon="simple-icons:pwa" style="vertical-align:-2px;color:#5a0fc8;"></iconify-icon> <strong>Mode Offline PWA</strong> : Fonctionnement hors-ligne autonome.<br>
+                <iconify-icon icon="simple-icons:docker" style="vertical-align:-2px;color:#2496ed;"></iconify-icon> <strong>DevOps &amp; Sécurité</strong> : Docker Nginx multi-stage, CI/CD GitHub Actions, tests Vitest + Playwright E2E.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:react"></iconify-icon> React 18</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:threedotjs"></iconify-icon> Three.js</span>
+                <span class="badge"><iconify-icon icon="simple-icons:vite"></iconify-icon> Vite 7</span>
+                <span class="badge"><iconify-icon icon="simple-icons:supabase"></iconify-icon> Supabase</span>
+                <span class="badge"><iconify-icon icon="simple-icons:docker"></iconify-icon> Docker</span>
+                <span class="badge"><iconify-icon icon="simple-icons:githubactions"></iconify-icon> CI/CD</span>
+                <span class="badge"><iconify-icon icon="simple-icons:playwright"></iconify-icon> Playwright</span>
+                <span class="badge"><iconify-icon icon="simple-icons:vitest"></iconify-icon> Vitest</span>
+              </div>
+              
+              <div class="project-card__footer">
+                <a href="https://github.com/Ourajeenn/Plateforme-gamefication_wakkany.git" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:github"></iconify-icon> Dépôt GitHub
+                </a>
+                <a href="https://github.com/Ourajeenn/Plateforme-gamefication_wakkany" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:readme"></iconify-icon> Consulter le Projet
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 : PharmaGO_V1 -->
+          <div class="project-card reveal">
+            <div class="project-card__preview">
+              <img src="assets/images/pharmago.png" alt="Aperçu PharmaGo Express" class="project-card__img project-card__img--primary" loading="lazy">
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--emerald project-card__preview-badge">E-Santé · Headless & Microservices</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">🏥 PharmaGo Express — Plateforme Intégrée de Santé</h3>
+              <p class="project-card__desc">
+                Solution complète et sécurisée de gestion de la chaîne pharmaceutique et de livraison express de médicaments, reliant patients, médecins, pharmacies, livreurs et assurances.
+              </p>
+              
+              <!-- Points clés issus du README -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="simple-icons:supabase" style="vertical-align:-2px;color:#3ecf8e;"></iconify-icon> Fonctionnalités &amp; Architecture :</strong><br>
+                <iconify-icon icon="simple-icons:react" style="vertical-align:-2px;color:#61dafb;"></iconify-icon> <strong>Architecture Headless &amp; Microservices</strong> : React/TypeScript + TanStack Query + Edge Functions Deno.<br>
+                <iconify-icon icon="simple-icons:leaflet" style="vertical-align:-2px;color:#199900;"></iconify-icon> <strong>Tracking GPS Temps Réel</strong> : Géolocalisation des livreurs avec <em>Leaflet</em> &amp; WebSockets.<br>
+                <iconify-icon icon="simple-icons:openai" style="vertical-align:-2px;color:#74aa9c;"></iconify-icon> <strong>Assistant Santé IA (Leslie)</strong> : Support vocal <code>VoiceCommandControl</code> et analyse médicale proactive.<br>
+                <iconify-icon icon="simple-icons:tesseract" style="vertical-align:-2px;color:#f59e0b;"></iconify-icon> <strong>OCR &amp; Tiers Payant</strong> : Scan d'ordonnances via <em>Tesseract.js</em> et calcul automatique des remboursements.<br>
+                <iconify-icon icon="simple-icons:selenium" style="vertical-align:-2px;color:#43b02a;"></iconify-icon> <strong>Automatisation &amp; Scrapers</strong> : Sync toutes les 6h des pharmacies de garde via Python/Selenium.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:react"></iconify-icon> React</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:leaflet"></iconify-icon> Leaflet</span>
+                <span class="badge"><iconify-icon icon="simple-icons:supabase"></iconify-icon> Supabase</span>
+                <span class="badge"><iconify-icon icon="simple-icons:deno"></iconify-icon> Deno Edge</span>
+                <span class="badge"><iconify-icon icon="simple-icons:python"></iconify-icon> Python</span>
+                <span class="badge"><iconify-icon icon="simple-icons:selenium"></iconify-icon> Selenium</span>
+                <span class="badge"><iconify-icon icon="simple-icons:netlify"></iconify-icon> Netlify</span>
+              </div>
+              
+              <div class="project-card__footer">
+                <a href="https://github.com/Ourajeenn/PharmaGO_V1.git" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:github"></iconify-icon> Dépôt GitHub
+                </a>
+                <a href="https://pharmago-express-v1.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="ph:play-circle-duotone"></iconify-icon> Démo Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 : IF-EDUPRIME -->
+          <div class="project-card reveal">
+            <div class="project-card__preview project-card__preview--icon">
+              <div class="project-card__icon-placeholder">
+                <iconify-icon icon="ph:graduation-cap-duotone" width="72" height="72"></iconify-icon>
+              </div>
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--purple project-card__preview-badge">EdTech · Gestion Pédagogique</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">🎓 IF-EDUPRIME — Plateforme Éducative</h3>
+              <p class="project-card__desc">
+                Plateforme web éducative moderne et modulaire dédiée à la gestion des parcours d'apprentissage, ressources de formation, suivi des apprenants et espace pédagogique collaboratif.
+              </p>
+              
+              <!-- Points clés -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="ph:graduation-cap-duotone" style="vertical-align:-2px;color:#a78bfa;"></iconify-icon> Fonctionnalités &amp; Architecture :</strong><br>
+                <iconify-icon icon="simple-icons:gitbook" style="vertical-align:-2px;color:#a78bfa;"></iconify-icon> <strong>Gestion des Formations &amp; Modules</strong> : Organisation structurée des contenus de cours et devoirs.<br>
+                <iconify-icon icon="simple-icons:grafana" style="vertical-align:-2px;color:#818cf8;"></iconify-icon> <strong>Tableaux de Bord Analytiques</strong> : Suivi en temps réel de la progression et des évaluations.<br>
+                <iconify-icon icon="simple-icons:pwa" style="vertical-align:-2px;color:#c084fc;"></iconify-icon> <strong>Interface Responsive &amp; Accessible</strong> : Ergonomie soignée adaptée à tous les écrans.<br>
+                <iconify-icon icon="simple-icons:typescript" style="vertical-align:-2px;color:#3178c6;"></iconify-icon> <strong>Architecture Modulaire</strong> : Code propre, typage strict et séparation claire des responsabilités.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:react"></iconify-icon> React</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:nodedotjs"></iconify-icon> Node.js</span>
+                <span class="badge"><iconify-icon icon="simple-icons:express"></iconify-icon> Express</span>
+                <span class="badge"><iconify-icon icon="simple-icons:postgresql"></iconify-icon> PostgreSQL</span>
+              </div>
+              
+              <div class="project-card__footer">
+                <a href="https://github.com/Ourajeenn/IF-EDUPRIME.git" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:github"></iconify-icon> Dépôt GitHub
+                </a>
+                <a href="https://github.com/Ourajeenn/IF-EDUPRIME" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:readme"></iconify-icon> Consulter le Projet
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4 : JustEcoBox -->
+          <div class="project-card reveal">
+            <div class="project-card__preview">
+              <img src="assets/images/justecobox.png" alt="Aperçu JustEcoBox" class="project-card__img project-card__img--primary" loading="lazy">
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--blue project-card__preview-badge">Serious Game · Éco-responsabilité</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">🌿 JustEcoBox — Solution Éco-responsable</h3>
+              <p class="project-card__desc">
+                Projet de classe Serious Game (Bachelor 3) dédié à l'économie circulaire et l'écologie, proposant la commande de box éco-responsables sur mesure.
+              </p>
+              
+              <!-- Points clés -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="ph:plant-duotone" style="vertical-align:-2px;color:#4ade80;"></iconify-icon> Fonctionnalités &amp; Architecture :</strong><br>
+                <iconify-icon icon="simple-icons:gamemaker" style="vertical-align:-2px;color:#4ade80;"></iconify-icon> <strong>Sensibilisation Écologique</strong> : Serious Game interactif et simulateur d'impact environnemental.<br>
+                <iconify-icon icon="simple-icons:shopify" style="vertical-align:-2px;color:#a3e635;"></iconify-icon> <strong>Tunnel de Commande Simplifié</strong> : Sélection sur mesure de produits éco-responsables et validation.<br>
+                <iconify-icon icon="simple-icons:netlify" style="vertical-align:-2px;color:#00c7b7;"></iconify-icon> <strong>Performance &amp; Hébergement Cloud</strong> : Interface ultra-légère avec déploiement continu sur Netlify.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:javascript"></iconify-icon> JavaScript (ES6+)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:html5"></iconify-icon> HTML5</span>
+                <span class="badge"><iconify-icon icon="simple-icons:css3"></iconify-icon> CSS3</span>
+                <span class="badge"><iconify-icon icon="simple-icons:netlify"></iconify-icon> Netlify</span>
+              </div>
+              
+              <div class="project-card__footer">
+                <a href="https://github.com/Ourajeenn/JustEcoBox.git" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:github"></iconify-icon> Dépôt GitHub
+                </a>
+                <a href="https://justecobox.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="ph:play-circle-duotone"></iconify-icon> Démo Live
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 5 : Cuisine Ensemble -->
+          <div class="project-card reveal">
+            <div class="project-card__preview project-card__preview--icon" style="background: linear-gradient(135deg, #1f0d04 0%, #2e1208 100%);">
+              <div class="project-card__icon-placeholder" style="color:#f97316;">
+                <iconify-icon icon="ph:cooking-pot-duotone" width="72" height="72"></iconify-icon>
+              </div>
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--orange project-card__preview-badge">React 19 · Node 24 · Kubernetes · Grafana</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">🍽️ Cuisine Ensemble — Partage de Repas Entre Voisins</h3>
+              <p class="project-card__desc">
+                Plateforme web de partage de repas maison entre voisins : publication, réservation, paiement en ligne et système d'avis, propulsée par un pipeline DevOps complet (Kubernetes, Prometheus, Grafana).
+              </p>
+
+              <!-- Points clés issus du README -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="ph:cooking-pot-duotone" style="vertical-align:-2px;color:#f97316;"></iconify-icon> Architecture &amp; Fonctionnalités de Production :</strong><br>
+                <iconify-icon icon="simple-icons:react" style="vertical-align:-2px;color:#61dafb;"></iconify-icon> <strong>Full-Stack Moderne</strong> : React 19 + TanStack Start (SSR) + Node.js 24 + PostgreSQL 16.<br>
+                <iconify-icon icon="simple-icons:openstreetmap" style="vertical-align:-2px;color:#7ebc6f;"></iconify-icon> <strong>Plateforme de Quartier</strong> : Réservation de portions, gestion des créneaux de retrait et avis vérifiés.<br>
+                <iconify-icon icon="simple-icons:kubernetes" style="vertical-align:-2px;color:#326ce5;"></iconify-icon> <strong>Déploiement Kubernetes</strong> : Scripts d'installation K8s automatisés, services et port-forwarding.<br>
+                <iconify-icon icon="simple-icons:prometheus" style="vertical-align:-2px;color:#e6522c;"></iconify-icon> <strong>Stack Monitoring</strong> : Prometheus (port 9090) + Grafana (port 3001) avec dashboards temps réel.<br>
+                <iconify-icon icon="simple-icons:githubactions" style="vertical-align:-2px;color:#2088ff;"></iconify-icon> <strong>CI/CD &amp; Docker</strong> : Docker Compose multi-services et pipeline GitHub Actions de build/test.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:react"></iconify-icon> React 19</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:nodedotjs"></iconify-icon> Node.js 24</span>
+                <span class="badge"><iconify-icon icon="simple-icons:tailwindcss"></iconify-icon> Tailwind CSS</span>
+                <span class="badge"><iconify-icon icon="simple-icons:postgresql"></iconify-icon> PostgreSQL 16</span>
+                <span class="badge"><iconify-icon icon="simple-icons:supabase"></iconify-icon> Supabase Auth</span>
+                <span class="badge"><iconify-icon icon="simple-icons:docker"></iconify-icon> Docker</span>
+                <span class="badge"><iconify-icon icon="simple-icons:kubernetes"></iconify-icon> Kubernetes</span>
+                <span class="badge"><iconify-icon icon="simple-icons:prometheus"></iconify-icon> Prometheus</span>
+                <span class="badge"><iconify-icon icon="simple-icons:grafana"></iconify-icon> Grafana</span>
+                <span class="badge"><iconify-icon icon="simple-icons:githubactions"></iconify-icon> CI/CD</span>
+              </div>
+
+              <div class="project-card__footer">
+                <a href="https://github.com/Ourajeenn/Cuisine_Ensemble" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:github"></iconify-icon> Dépôt GitHub
+                </a>
+                <a href="https://github.com/Ourajeenn/Cuisine_Ensemble" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:gitbook"></iconify-icon> Documentation Projet
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 6 : BattleQuest -->
+          <div class="project-card reveal">
+            <div class="project-card__preview project-card__preview--icon" style="background: linear-gradient(135deg, #0d091e 0%, #1e0d36 100%);">
+              <div class="project-card__icon-placeholder" style="color:#a855f7;">
+                <iconify-icon icon="ph:sword-duotone" width="72" height="72"></iconify-icon>
+              </div>
+              <div class="project-card__preview-overlay"></div>
+              <div class="badge badge--purple project-card__preview-badge">TypeScript · WebSockets · GitLab CI/CD</div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">⚔️ BattleQuest — Jeu de Combat &amp; Quêtes en Ligne</h3>
+              <p class="project-card__desc">
+                Jeu web multijoueur de type RPG/Combat : affrontez des adversaires en temps réel, progressez dans des quêtes et améliorez votre équipement, avec un pipeline DevOps sur GitLab CI/CD.
+              </p>
+
+              <!-- Points clés -->
+              <div class="project-card__highlights">
+                <strong><iconify-icon icon="ph:sword-duotone" style="vertical-align:-2px;color:#a855f7;"></iconify-icon> Architecture &amp; Fonctionnalités de Jeu :</strong><br>
+                <iconify-icon icon="simple-icons:socketdotio" style="vertical-align:-2px;color:#ffffff;"></iconify-icon> <strong>Duels en Temps Réel</strong> : Moteur de combat synchronisé par WebSockets bidirectionnels.<br>
+                <iconify-icon icon="simple-icons:gamemaker" style="vertical-align:-2px;color:#a855f7;"></iconify-icon> <strong>Progression RPG &amp; XP</strong> : Système de niveaux, arbre de talents et récompenses de victoires.<br>
+                <iconify-icon icon="simple-icons:gitlab" style="vertical-align:-2px;color:#fc6d26;"></iconify-icon> <strong>Pipeline GitLab CI/CD</strong> : Intégration continue, tests automatisés et déploiement géré sur GitLab.<br>
+                <iconify-icon icon="simple-icons:docker" style="vertical-align:-2px;color:#2496ed;"></iconify-icon> <strong>Conteneurisation Multi-Environnement</strong> : Environnements de jeu isolés et reproductibles sous Docker.
+              </div>
+
+              <div class="project-card__stack">
+                <span class="badge"><iconify-icon icon="simple-icons:javascript"></iconify-icon> JavaScript (ES6+)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:nodedotjs"></iconify-icon> Node.js</span>
+                <span class="badge"><iconify-icon icon="simple-icons:socketdotio"></iconify-icon> WebSockets</span>
+                <span class="badge"><iconify-icon icon="simple-icons:gitlab"></iconify-icon> GitLab CI/CD</span>
+                <span class="badge"><iconify-icon icon="simple-icons:docker"></iconify-icon> Docker</span>
+              </div>
+
+              <div class="project-card__footer">
+                <a href="https://gitlab.com/battlequest/battlequest" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="padding:7px 14px;font-size:0.82rem;">
+                  <iconify-icon icon="simple-icons:gitlab"></iconify-icon> Dépôt GitLab
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ==================== ARBRE DE CONSTRUCTION & CYCLE DE VIE DES PROJETS ==================== -->
+    <!-- ==================== ARBRE DE CONSTRUCTION & CYCLE DE VIE DES PROJETS RÉALISÉS ==================== -->
+    <section class="section section--pipeline" id="construction-projets">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label"><iconify-icon icon="simple-icons:diagramsdotnet"></iconify-icon> Méthodologie d'Ingénierie &amp; Cycle de Vie</div>
+          <h2 class="section-title">Arbre de <span class="text-gradient">Construction d'un Projet</span></h2>
+          <p class="section-desc">De l'analyse fonctionnelle aux pipelines CI/CD et à la mise en production : comment j'articule le <strong>Fond</strong> (règles métier, données), la <strong>Forme</strong> (UI/UX, 3D) et les <strong>Technos</strong> (React 19, Three.js, K8s, Prometheus).</p>
+        </div>
+
+        <div class="pipeline-tree reveal">
+          <!-- Central Connecting Spine -->
+          <div class="pipeline-spine"></div>
+
+          <!-- Phase 1 : Cadrage Métier & Méthode BMAD (Le Fond) -->
+          <div class="pipeline-step pipeline-step--left reveal">
+            <div class="pipeline-step__num">01</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#a855f7;background:rgba(168,85,247,0.1);border-color:rgba(168,85,247,0.3);">
+                <iconify-icon icon="simple-icons:diagramsdotnet"></iconify-icon> Phase 1 · Idéation &amp; Cadrage Métier (Le Fond)
+              </div>
+              <h3 class="pipeline-step__title">💡 Modélisation Métier &amp; Framework BMAD</h3>
+              <p class="pipeline-step__desc">
+                Cadrage précis des personas, parcours utilisateurs et règles de gestion critiques. Alignement entre vision produit et architecture logicielle pour éliminer la dette technique dès la genèse.
+              </p>
+              
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Wakkany :</strong> Modélisation de la gamification familiale (système de clans, pactes d'honneur, arbre de talents XP et quêtes temporisées).</li>
+                  <li><strong>PharmaGO Express :</strong> Segmentation stricte des flux pour <strong>5 profils d'utilisateurs</strong> (Patients, Médecins, Pharmacies, Livreurs, Assurances avec calcul automatique du Tiers Payant).</li>
+                  <li><strong>Cuisine Ensemble :</strong> Cadrage du partage de repas de quartier (réservation de portions, créneaux de retrait et avis vérifiés).</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:anthropic"></iconify-icon> Méthode BMAD</span>
+                <span class="badge"><iconify-icon icon="simple-icons:anthropic"></iconify-icon> Claude 3.7 / IA</span>
+                <span class="badge"><iconify-icon icon="simple-icons:notion"></iconify-icon> Spécifications Zod</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 : Design UI/UX, 3D & Architecture Système (La Forme & Les Schémas) -->
+          <div class="pipeline-step pipeline-step--right reveal">
+            <div class="pipeline-step__num">02</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#f24e1e;background:rgba(242,78,30,0.1);border-color:rgba(242,78,30,0.3);">
+                <iconify-icon icon="simple-icons:figma"></iconify-icon> Phase 2 · Prototypage UI/UX &amp; Schémas SQL (La Forme)
+              </div>
+              <h3 class="pipeline-step__title">🎨 Design Visuel Haute-Fidélité &amp; Modélisation</h3>
+              <p class="pipeline-step__desc">
+                Conception des maquettes interactives sur Figma, design system réutilisable (tokens, composants atomiques) et schématisation de l'architecture relationnelle PostgreSQL avec Row Level Security (RLS).
+              </p>
+
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Wakkany :</strong> Univers graphique sombre et néon, intégration de modèles d'avatars 3D (GLTF/GLB) animés et responsive design mobile PWA.</li>
+                  <li><strong>IF-EDUPRIME :</strong> Dashboard ergonomique avec suivi en direct de la progression pédagogique et organisation modulaire des cours.</li>
+                  <li><strong>JustEcoBox :</strong> Simulateur interactif de réduction d'empreinte carbone et tunnel de sélection de box éco-responsables sur mesure.</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:figma"></iconify-icon> Figma Auto-Layout</span>
+                <span class="badge"><iconify-icon icon="simple-icons:excalidraw"></iconify-icon> Excalidraw (C4)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:tailwindcss"></iconify-icon> Tailwind CSS</span>
+                <span class="badge"><iconify-icon icon="simple-icons:framer"></iconify-icon> Framer Motion</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 : Développement Full-Stack, Temps Réel & WebGL (Le Code & Les Technos) -->
+          <div class="pipeline-step pipeline-step--left reveal">
+            <div class="pipeline-step__num">03</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#61dafb;background:rgba(97,218,251,0.1);border-color:rgba(97,218,251,0.3);">
+                <iconify-icon icon="simple-icons:react"></iconify-icon> Phase 3 · Ingénierie Full-Stack &amp; Temps Réel (Le Code)
+              </div>
+              <h3 class="pipeline-step__title">💻 Développement Réactif, 3D WebGL &amp; Microservices</h3>
+              <p class="pipeline-step__desc">
+                Développement d'interfaces web ultra-réactives avec React 19 et Vite 7, intégration de scènes 3D interactives sous Three.js, communication bidirectionnelle WebSockets et microservices backend asynchrones.
+              </p>
+
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Wakkany :</strong> Rendu 3D temps réel avec <em>Three.js</em> &amp; <em>React Three Fiber</em>, salons multijoueur synchronisés par <em>Supabase Realtime WebSockets</em>.</li>
+                  <li><strong>Cuisine Ensemble :</strong> Architecture SSR moderne avec <em>React 19</em> + <em>TanStack Start</em> + <em>Node.js 24</em> + <em>PostgreSQL 16</em>.</li>
+                  <li><strong>PharmaGO Express :</strong> Tracking GPS livreur temps réel avec <em>Leaflet</em>, OCR d'ordonnance via <em>Tesseract.js</em>, assistant vocal IA <em>Leslie</em> et Edge Functions Deno.</li>
+                  <li><strong>BattleQuest :</strong> Moteur de combat et quêtes multijoueur synchronisés par <em>WebSockets</em> avec gestion dynamique de la latence.</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:react"></iconify-icon> React 19</span>
+                <span class="badge"><iconify-icon icon="simple-icons:typescript"></iconify-icon> TypeScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:threedotjs"></iconify-icon> Three.js 3D</span>
+                <span class="badge"><iconify-icon icon="simple-icons:supabase"></iconify-icon> Supabase Realtime</span>
+                <span class="badge"><iconify-icon icon="simple-icons:fastapi"></iconify-icon> FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 : DevOps, Tests & Pipelines CI/CD (L'Automatisation & La Qualité) -->
+          <div class="pipeline-step pipeline-step--right reveal">
+            <div class="pipeline-step__num">04</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#2088ff;background:rgba(32,136,255,0.1);border-color:rgba(32,136,255,0.3);">
+                <iconify-icon icon="simple-icons:githubactions"></iconify-icon> Phase 4 · Automatisation &amp; Pipelines CI/CD (La Qualité)
+              </div>
+              <h3 class="pipeline-step__title">🛡️ Conteneurisation Docker, Tests E2E &amp; CI/CD</h3>
+              <p class="pipeline-step__desc">
+                Isolation hermétique des applications avec Docker multi-stage, automatisation des tests de régression, audit de sécurité et déploiement continu sans interruption de service.
+              </p>
+
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Pipelines GitHub Actions (Wakkany &amp; Cuisine Ensemble) :</strong> Linting ESLint, tests unitaires <em>Vitest</em>, tests End-to-End multi-navigateurs <em>Playwright</em>, scan de secrets automatisé (`scan-secrets.js`) et migration SQL (`supabase db push`).</li>
+                  <li><strong>Pipeline GitLab CI/CD (BattleQuest) :</strong> Intégration et livraison continue gérées sous GitLab avec runners Docker dédiés.</li>
+                  <li><strong>Scraping Automatisé (PharmaGO) :</strong> Bots Python + Selenium exécutés automatiquement toutes les 6 heures pour extraire et géolocaliser les pharmacies de garde.</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:docker"></iconify-icon> Docker Multi-stage</span>
+                <span class="badge"><iconify-icon icon="simple-icons:githubactions"></iconify-icon> GitHub Actions</span>
+                <span class="badge"><iconify-icon icon="simple-icons:gitlab"></iconify-icon> GitLab CI/CD</span>
+                <span class="badge"><iconify-icon icon="simple-icons:playwright"></iconify-icon> Playwright E2E</span>
+                <span class="badge"><iconify-icon icon="simple-icons:vitest"></iconify-icon> Vitest</span>
+                <span class="badge"><iconify-icon icon="simple-icons:selenium"></iconify-icon> Selenium Scraper</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 5 : Orchestration Kubernetes & Déploiement Cloud (L'Échelle & La Résilience) -->
+          <div class="pipeline-step pipeline-step--left reveal">
+            <div class="pipeline-step__num">05</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#326ce5;background:rgba(50,108,229,0.1);border-color:rgba(50,108,229,0.3);">
+                <iconify-icon icon="simple-icons:kubernetes"></iconify-icon> Phase 5 · Kubernetes, Cloud &amp; PWA Offline (L'Échelle)
+              </div>
+              <h3 class="pipeline-step__title">🚀 Orchestration Kubernetes &amp; Distribution Cloud</h3>
+              <p class="pipeline-step__desc">
+                Mise en production sur clusters Kubernetes avec gestion fine du trafic, scaling automatique et résilience réseau via le mode PWA hors-ligne.
+              </p>
+
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Cluster Kubernetes (Cuisine Ensemble) :</strong> Manifests K8s déclaratifs (Deployments frontend/backend, StatefulSets PostgreSQL 16, Services, Ingress Nginx, ConfigMaps, Secrets et scripts de port-forwarding).</li>
+                  <li><strong>Progressive Web App (Wakkany) :</strong> Fonctionnement 100% autonome hors-ligne grâce aux Service Workers, gestion du cache et synchronisation différée.</li>
+                  <li><strong>Hébergement Cloud Haute Disponibilité :</strong> Netlify, Vercel et Fly.io avec configuration de certificats SSL automatiques et CDN mondial.</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:kubernetes"></iconify-icon> Kubernetes (K8s)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:helm"></iconify-icon> Helm Charts</span>
+                <span class="badge"><iconify-icon icon="simple-icons:pwa"></iconify-icon> PWA Offline Ready</span>
+                <span class="badge"><iconify-icon icon="simple-icons:netlify"></iconify-icon> Netlify &amp; Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 6 : Observabilité, Sécurité & Croissance (La Supervision & L'Impact) -->
+          <div class="pipeline-step pipeline-step--right reveal">
+            <div class="pipeline-step__num">06</div>
+            <div class="pipeline-step__card">
+              <div class="pipeline-step__badge" style="color:#e6522c;background:rgba(230,82,44,0.1);border-color:rgba(230,82,44,0.3);">
+                <iconify-icon icon="simple-icons:prometheus"></iconify-icon> Phase 6 · Monitoring, Sécurité &amp; Conversion (La Performance)
+              </div>
+              <h3 class="pipeline-step__title">📊 Prometheus, Grafana, Sécurité RLS &amp; SEO</h3>
+              <p class="pipeline-step__desc">
+                Supervision temps réel des métriques serveurs et conteneurs, protection granulaire des données utilisateurs par politiques SQL et maximisation du taux de conversion.
+              </p>
+
+              <div class="pipeline-step__details">
+                <div class="pipeline-step__subheading"><strong>🎯 Applications concrètes issues des READMEs :</strong></div>
+                <ul class="pipeline-step__list">
+                  <li><strong>Stack Observabilité (Cuisine Ensemble) :</strong> Serveur <em>Prometheus</em> (port 9090) collectant les métriques applicatives + dashboards dynamiques <em>Grafana</em> (port 3001) avec alertes automatiques.</li>
+                  <li><strong>Sécurité SQL RLS (Wakkany &amp; PharmaGO) :</strong> Row Level Security activé sur 100% des tables PostgreSQL (`auth.uid() = user_id`), chiffrement des données de santé et rate limiting API.</li>
+                  <li><strong>Croissance &amp; Conversion (MyRH Solutions) :</strong> Tunnels de vente optimisés sur <em>systeme.io</em> (<strong>+30% de conversion</strong>) et stratégie de référencement naturel (<strong>+50% de trafic organique</strong>).</li>
+                </ul>
+              </div>
+
+              <div class="pipeline-step__tools">
+                <span class="badge"><iconify-icon icon="simple-icons:prometheus"></iconify-icon> Prometheus (9090)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:grafana"></iconify-icon> Grafana (3001)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:postgresql"></iconify-icon> Row Level Security</span>
+                <span class="badge"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon> systeme.io (+30%)</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.pipeline-tree -->
+      </div>
+    </section>
+
+<!-- ==================== PARCOURS PROFESSIONNEL & ACADÉMIQUE (CV RÉEL) ==================== -->
+    <section class="section" id="parcours">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label"><iconify-icon icon="ph:briefcase-duotone"></iconify-icon> Expériences &amp; Formations</div>
+          <h2 class="section-title">Mon <span class="text-gradient">Parcours</span></h2>
+          <p class="section-desc">Historique de mes expériences professionnelles en entreprise et cursus académique en informatique, DevOps et génie logiciel.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <!-- Expérience 1 : MyRH -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__date">2026 · STAGE (PARIS, FRANCE)</div>
+              <h3 class="timeline__title">Stagiaire Développeur Front-End — MyRH</h3>
+              <div class="timeline__subtitle"><iconify-icon icon="lucide:building-2" style="vertical-align:-2px;"></iconify-icon> Cabinet de conseil RH (Paris, France)</div>
+              <p class="timeline__desc">
+                • <strong>Optimisation du référencement SEO</strong> : Stratégie de contenu technique générant une <strong>augmentation de 50% du trafic organique</strong>.<br>
+                • <strong>Tunnels de Vente sur systeme.io</strong> : <strong>Augmentation de 30% du taux de conversion</strong> après conception et optimisation du tunnel de conversion.<br>
+                • <strong>Design UI/UX &amp; Intégration Web</strong> : Création de maquettes sur Figma et améliorations de l'expérience utilisateur et de l'accessibilité du site web.
+              </p>
+              <div class="project-card__stack" style="margin-top:10px;">
+                <span class="badge"><iconify-icon icon="simple-icons:figma"></iconify-icon> Figma</span>
+                <span class="badge"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon> systeme.io</span>
+                <span class="badge"><iconify-icon icon="simple-icons:googleanalytics"></iconify-icon> SEO (+50%)</span>
+                <span class="badge"><iconify-icon icon="simple-icons:javascript"></iconify-icon> JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formation 1 : Ecole-IT -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__date">2025 — 2026 · FORMATION (ORLÉANS, FRANCE)</div>
+              <h3 class="timeline__title">Bachelor 3 Administrateur DevOps — Ecole-IT</h3>
+              <div class="timeline__subtitle"><iconify-icon icon="ph:graduation-cap-duotone" style="vertical-align:-2px;"></iconify-icon> Ecole-IT Orléans (45000, France)</div>
+              <p class="timeline__desc">
+                Spécialisation approfondie en culture et ingénierie DevOps : administration systèmes Linux avancée, conteneurisation Docker, orchestration Kubernetes, Infrastructure as Code (Terraform, Ansible), pipelines CI/CD (GitHub Actions, GitLab CI), supervision Prometheus &amp; Grafana, et déploiements Cloud.
+              </p>
+              <div class="project-card__stack" style="margin-top:10px;">
+                <span class="badge"><iconify-icon icon="simple-icons:linux"></iconify-icon> Linux</span>
+                <span class="badge"><iconify-icon icon="simple-icons:docker"></iconify-icon> Docker</span>
+                <span class="badge"><iconify-icon icon="simple-icons:kubernetes"></iconify-icon> Kubernetes</span>
+                <span class="badge"><iconify-icon icon="simple-icons:terraform"></iconify-icon> Terraform</span>
+                <span class="badge"><iconify-icon icon="simple-icons:githubactions"></iconify-icon> CI/CD</span>
+                <span class="badge"><iconify-icon icon="simple-icons:prometheus"></iconify-icon> Prometheus &amp; Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expérience 2 : Ebenyx -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__date">2024 · STAGE (ABIDJAN, CÔTE D'IVOIRE)</div>
+              <h3 class="timeline__title">Stagiaire Développeur — Ebenyx Technologie</h3>
+              <div class="timeline__subtitle"><iconify-icon icon="lucide:building-2" style="vertical-align:-2px;"></iconify-icon> Entreprise de services numériques &amp; solutions web</div>
+              <p class="timeline__desc">
+                • <strong>Développement de Fonctionnalités</strong> : Collaboration active avec l'équipe de développement pour concevoir et intégrer de nouveaux modules applicatifs.<br>
+                • <strong>Résolution de Bugs &amp; Optimisation</strong> : Débogage, refactoring de code et amélioration significative des temps de chargement des applications web.<br>
+                • <strong>Qualité &amp; Bonnes Pratiques</strong> : Rédaction de documentations techniques claires et participation régulière aux revues de code (Code Reviews).
+              </p>
+              <div class="project-card__stack" style="margin-top:10px;">
+                <span class="badge"><iconify-icon icon="simple-icons:javascript"></iconify-icon> JavaScript</span>
+                <span class="badge"><iconify-icon icon="simple-icons:php"></iconify-icon> PHP / SQL</span>
+                <span class="badge"><iconify-icon icon="simple-icons:git"></iconify-icon> Git &amp; Code Review</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formations antérieures & Diplômes -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__date">2020 — 2024 · DIPLÔMES &amp; CERTIFICATIONS</div>
+              <h3 class="timeline__title">Cursus Universitaire &amp; Certifications Professionnelles</h3>
+              <div class="timeline__subtitle"><iconify-icon icon="ph:certificate-duotone" style="vertical-align:-2px;"></iconify-icon> Informatique, Génie Logiciel &amp; Entrepreneuriat</div>
+              <p class="timeline__desc">
+                • <strong>2024 :</strong> Certification en Protection des Données &amp; RGPD (ALISON remote)<br>
+                • <strong>2023 :</strong> <strong>Licence 3 Informatique</strong>, option Génie Logiciel (ESCAM, Abidjan)<br>
+                • <strong>2023 :</strong> Certificat en Entrepreneuriat et Gestion des Entreprises (CEMS International)<br>
+                • <strong>2022 :</strong> <strong>DUT Informatique</strong>, option Développeur d'Applications (IPCI, Abidjan)<br>
+                • <strong>2020 :</strong> <strong>Baccalauréat série A1</strong> (CNPTE, Abidjan)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <div class="section-label">Échangeons</div>
+          <h2 class="section-title">Prendre <span class="text-gradient">Contact</span></h2>
+          <p class="section-desc">Ouvert à de nouvelles opportunités professionnelles (CDI, alternance, missions DevOps & Développement).</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Coordonnées directes réelles du CV -->
+          <div class="contact__info-card reveal">
+            <h3 style="font-size:1.2rem;font-weight:600;margin-bottom:6px;">Coordonnées Directes</h3>
+            <p style="color:var(--text-2);font-size:0.88rem;margin-bottom:12px;">N'hésitez pas à me joindre directement par email, téléphone ou sur mes réseaux.</p>
+
+            <div class="contact__method">
+              <div class="contact__method-icon"><iconify-icon icon="lucide:mail"></iconify-icon></div>
+              <div>
+                <div class="contact__method-lbl">Email</div>
+                <a href="mailto:jenoura17@gmail.com" class="contact__method-val" style="color:var(--cyan);">jenoura17@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__method">
+              <div class="contact__method-icon"><iconify-icon icon="lucide:phone"></iconify-icon></div>
+              <div>
+                <div class="contact__method-lbl">Téléphone</div>
+                <a href="tel:+33744195569" class="contact__method-val" style="color:var(--cyan);">+33 07 44 19 55 69</a>
+              </div>
+            </div>
+
+            <div class="contact__method">
+              <div class="contact__method-icon"><iconify-icon icon="lucide:map-pin"></iconify-icon></div>
+              <div>
+                <div class="contact__method-lbl">Localisation</div>
+                <span class="contact__method-val"> Orléans (45100), France</span>
+              </div>
+            </div>
+
+            <div class="contact__method">
+              <div class="contact__method-icon"><iconify-icon icon="simple-icons:pinterest"></iconify-icon></div>
+              <div>
+                <div class="contact__method-lbl">Pinterest</div>
+                <a href="https://www.pinterest.com/jeennrossraoul/" target="_blank" rel="noopener noreferrer" class="contact__method-val" style="color:var(--cyan);">@jeenn-ross raoul</a>
+              </div>
+            </div>
+
+            <div class="contact__method">
+              <div class="contact__method-icon"><iconify-icon icon="lucide:briefcase"></iconify-icon></div>
+              <div>
+                <div class="contact__method-lbl">Disponibilité</div>
+                <span class="contact__method-val">Télétravail ou Présentiel</span>
+              </div>
+            </div>
+
+            <div style="padding-top:16px;border-top:1px solid var(--border);">
+              <a href="assets/docs/CV_Jean_Rose_OURA.pdf" download="CV_JEAN-ROSE_KOUADJO_OURA.pdf" class="btn btn-glow-cv" style="width:100%;justify-content:center;">
+                <iconify-icon icon="lucide:download"></iconify-icon>
+                <span>Télécharger mon CV (PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact -->
+          <form class="contact__form reveal" id="contactForm">
+            <h3 style="font-size:1.2rem;font-weight:600;margin-bottom:6px;">Envoyer un message</h3>
+            
+            <div class="form-status" id="formStatus"></div>
+
+            <div class="form-group">
+              <label for="name" class="form-label">Votre Nom</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Votre Adresse Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Ex: jean.dupont@entreprise.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Ex: Opportunité DevOps / Développeur" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Votre Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Détaillez votre proposition ou message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="padding:12px;font-size:0.92rem;">
+              <iconify-icon icon="lucide:send"></iconify-icon>
+              <span>Envoyer le message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== PIED DE PAGE (FOOTER) ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Présentation Marque -->
+        <div class="footer__brand">
+          <div class="footer__brand-title text-gradient">Jean-rose  OURA</div>
+          <p class="footer__brand-desc">
+            Diplômé Bachelor DevOps  & Développeur Web.
+          </p>
+        </div>
+
+        <!-- Colonne 1 : Navigation -->
+        <div class="footer__col">
+          <div class="footer__col-title">Navigation</div>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 2 : Réseaux -->
+        <div class="footer__col">
+          <div class="footer__col-title">Réseaux</div>
+          <ul>
+            <li>
+              <a href="https://github.com/Ourajeenn" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;">
+                <iconify-icon icon="simple-icons:github"></iconify-icon> GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jean-rose-oura-787847393/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;">
+                <iconify-icon icon="simple-icons:linkedin"></iconify-icon> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/jeennrossraoul/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;">
+                <iconify-icon icon="simple-icons:pinterest"></iconify-icon> Pinterest
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : Actions -->
+        <div class="footer__col">
+          <div class="footer__col-title">Actions</div>
+          <ul>
+            <li>
+              <a href="assets/docs/CV_Jean_Rose_OURA.pdf" download="CV_JEAN-ROSE_KOUADJO_OURA.pdf" style="display:flex;align-items:center;gap:6px;color:var(--cyan);">
+                <iconify-icon icon="lucide:download"></iconify-icon> Télécharger mon CV
+              </a>
+            </li>
+            <li>
+              <a href="#contact" style="display:flex;align-items:center;gap:6px;">
+                <iconify-icon icon="lucide:mail"></iconify-icon> Me contacter
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mention du bas -->
+      <div class="footer__bottom">
+        <span>© <span id="footerYear">1703</span> — <strong>Ourajeenn</strong></span>
+        <span class="footer__quote">rien ne changes si rien ne changes.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+  <!-- Unicorn Studio SDK (Faisceau 3D Lumineux) -->
+  <script>
+  !function(){var u=window.UnicornStudio;if(u&&u.init){u.init()}else{var d=document,s=d.createElement("script");s.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.3/dist/unicornStudio.umd.js";s.onload=function(){window.UnicornStudio&&window.UnicornStudio.init()};(d.head||d.body).appendChild(s)}}();
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script>
+
+  /* ==========================================================================
+     PERFECT ANIMATED RPG SKILL TREE — SVG Flow & Modal HUD
+     ========================================================================== */
+  (function () {
+    const canvas   = document.getElementById('stCanvas');
+    const svg      = document.getElementById('stSvg');
+    const nexus    = document.getElementById('stNexus');
+    const nodes    = Array.from(document.querySelectorAll('.st-node'));
+    const modal    = document.getElementById('stModal');
+    const filters  = Array.from(document.querySelectorAll('.st-filter'));
+
+    if (!canvas || !svg) return;
+
+    // Graph Connections
+    const connections = [
+      // Nexus (Ourajeenn) to roots
+      { from: 'nexus', to: 'linux', clan: 'nexus-devops' },
+      { from: 'nexus', to: 'javascript', clan: 'nexus-code' },
+      { from: 'nexus', to: 'figma', clan: 'nexus-ai' },
+
+      // DevOps clan (Y=120)
+      { from: 'linux', to: 'docker', clan: 'devops' },
+      { from: 'docker', to: 'iac', clan: 'devops' },
+      { from: 'docker', to: 'cicd', clan: 'devops' },
+      { from: 'iac', to: 'semgrep', clan: 'devops' },
+      { from: 'semgrep', to: 'monitoring', clan: 'devops' },
+      { from: 'cicd', to: 'monitoring', clan: 'devops' },
+      { from: 'monitoring', to: 'k8s', clan: 'devops' },
+
+      // Code clan (Y=320)
+      { from: 'javascript', to: 'react', clan: 'code' },
+      { from: 'javascript', to: 'python-backend', clan: 'code' },
+      { from: 'react', to: 'postgres', clan: 'code' },
+      { from: 'python-backend', to: 'scraping', clan: 'code' },
+      { from: 'postgres', to: 'node-fullstack', clan: 'code' },
+      { from: 'scraping', to: 'node-fullstack', clan: 'code' },
+      { from: 'node-fullstack', to: 'threejs', clan: 'code' },
+
+      // AI & Strategy clan (Y=520)
+      { from: 'figma', to: 'growth', clan: 'ai' },
+      { from: 'growth', to: 'agile', clan: 'ai' },
+      { from: 'growth', to: 'genai', clan: 'ai' },
+      { from: 'agile', to: 'rag', clan: 'ai' },
+      { from: 'rag', to: 'bmad', clan: 'ai' },
+      { from: 'genai', to: 'bmad', clan: 'ai' },
+      { from: 'bmad', to: 'ai-nexus', clan: 'ai' },
+    ];
+
+    function hexToRgb(hex) {
+      if (!hex) return '56, 189, 248';
+      hex = hex.replace('#', '');
+      if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+      const num = parseInt(hex, 16);
+      return `${(num >> 16) & 255}, ${(num >> 8) & 255}, ${num & 255}`;
+    }
+
+    // Apply Node Positions & Colors
+    nodes.forEach(node => {
+      const x = node.dataset.x;
+      const y = node.dataset.y;
+      const color = node.dataset.color || '#38bdf8';
+      node.style.left = x + 'px';
+      node.style.top  = y + 'px';
+      node.style.setProperty('--node-color', color);
+      node.style.setProperty('--node-color-rgb', hexToRgb(color));
+    });
+
+    function getNodeCenter(el) {
+      if (el === nexus) {
+        return { x: 15 + 50, y: 265 + 50 }; // Center of Ourajeenn 100x100 -> (65, 315)
+      }
+      return { x: parseFloat(el.dataset.x), y: parseFloat(el.dataset.y) };
+    }
+
+    function drawLines() {
+      svg.innerHTML = '';
+      const allEls = { nexus, ...Object.fromEntries(nodes.map(n => [n.dataset.id, n])) };
+
+      connections.forEach(conn => {
+        const fromEl = allEls[conn.from];
+        const toEl   = allEls[conn.to];
+        if (!fromEl || !toEl) return;
+
+        const p1 = getNodeCenter(fromEl);
+        const p2 = getNodeCenter(toEl);
+
+        const dx = p2.x - p1.x;
+        const cx1 = p1.x + dx * 0.45;
+        const cy1 = p1.y;
+        const cx2 = p1.x + dx * 0.55;
+        const cy2 = p2.y;
+
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', `M${p1.x},${p1.y} C${cx1},${cy1} ${cx2},${cy2} ${p2.x},${p2.y}`);
+        path.setAttribute('class', `st-conn st-conn--${conn.clan}`);
+        svg.appendChild(path);
+      });
+    }
+
+    // Filter Clans
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        const filter = btn.dataset.filter;
+        nodes.forEach(node => {
+          if (filter === 'all' || node.dataset.clan === filter) {
+            node.classList.remove('is-dimmed');
+          } else {
+            node.classList.add('is-dimmed');
+          }
+        });
+
+        document.querySelectorAll('.st-conn').forEach(line => {
+          if (filter === 'all' || line.classList.contains(`st-conn--${filter}`) || line.classList.contains(`st-conn--nexus-${filter}`)) {
+            line.style.opacity = '1';
+          } else {
+            line.style.opacity = '0.08';
+          }
+        });
+      });
+    });
+
+    // Detail Modal HUD
+    function openModal(data) {
+      const modalCard = modal.querySelector('.st-modal__card');
+      const color = data.color || '#38bdf8';
+
+      modalCard.style.setProperty('--modal-color', color);
+      modalCard.style.setProperty('--modal-color-rgb', hexToRgb(color));
+
+      document.getElementById('stModalClan').textContent = (data.clan || 'SKILL').toUpperCase();
+      document.getElementById('stModalTitle').textContent = data.title || '';
+      document.getElementById('stModalSub').textContent = data.subtitle || '';
+      document.getElementById('stModalPct').textContent = (data.level || 85) + '%';
+      
+      const bar = document.getElementById('stModalBar');
+      bar.style.width = '0%';
+      setTimeout(() => { bar.style.width = (data.level || 85) + '%'; }, 50);
+
+      document.getElementById('stModalDesc').textContent = data.desc || '';
+
+      const iconWrap = document.getElementById('stModalIconWrap');
+      iconWrap.innerHTML = `<iconify-icon icon="${data.icon || 'simple-icons:devdotto'}"></iconify-icon>`;
+      if (window.Iconify) window.Iconify.scan(iconWrap);
+
+      const skillsContainer = document.getElementById('stModalSkills');
+      skillsContainer.innerHTML = '';
+      if (data.skills) {
+        data.skills.split(',').forEach(s => {
+          const tag = document.createElement('span');
+          tag.className = 'st-modal__tag';
+          tag.textContent = s.trim();
+          skillsContainer.appendChild(tag);
+        });
+      }
+
+      const projContainer = document.getElementById('stModalProjects');
+      projContainer.innerHTML = '';
+      if (data.projects) {
+        data.projects.split(',').forEach(p => {
+          const tag = document.createElement('span');
+          tag.className = 'st-modal__tag st-modal__tag--project';
+          tag.innerHTML = `<iconify-icon icon="simple-icons:github" style="vertical-align:-2px;margin-right:4px;"></iconify-icon> ${p.trim()}`;
+          projContainer.appendChild(tag);
+        });
+      }
+
+      modal.classList.add('is-active');
+      modal.removeAttribute('aria-hidden');
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.getElementById('stModalClose').addEventListener('click', closeModal);
+    document.getElementById('stModalBackdrop').addEventListener('click', closeModal);
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+    nodes.forEach(node => {
+      node.addEventListener('click', () => { openModal(node.dataset); });
+    });
+
+    if (nexus) {
+      nexus.addEventListener('click', () => { openModal(nexus.dataset); });
+    }
+
+    drawLines();
+    window.addEventListener('load', drawLines);
+    setTimeout(drawLines, 200);
+    window.addEventListener('resize', drawLines);
+  })();
+
+  </script>
+
+  <!-- ==================== BOUTON RETOUR EN HAUT ==================== -->
+  <button class="btt-btn" id="bttBtn" aria-label="Retour en haut" title="Retour en haut">
+    <iconify-icon icon="ph:caret-up-bold"></iconify-icon>
+  </button>
+
+  <script>
+
+  /* ── Back-to-Top ── */
+  (function () {
+    const btn = document.getElementById('bttBtn');
+    if (!btn) return;
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 320) {
+        btn.classList.add('is-visible');
+      } else {
+        btn.classList.remove('is-visible');
+      }
+    }, { passive: true });
+    btn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
+
+  /* ── Skill Tree ── */
+  (function () {
+    const canvas  = document.getElementById('stCanvas');
+    const svg     = document.getElementById('stSvg');
+    const nexus   = document.getElementById('stNexus');
+    const nodes   = Array.from(document.querySelectorAll('.st-node'));
+    const modal   = document.getElementById('stModal');
+    const filters = Array.from(document.querySelectorAll('.st-filter'));
+
+    if (!canvas || !svg) return;
+
+    const connections = [
+      { from: 'nexus',      to: 'linux',        clan: 'nexus-devops' },
+      { from: 'nexus',      to: 'javascript',   clan: 'nexus-code' },
+      { from: 'nexus',      to: 'figma',        clan: 'nexus-ai' },
+
+      { from: 'linux',      to: 'docker',       clan: 'devops' },
+      { from: 'docker',     to: 'iac',          clan: 'devops' },
+      { from: 'docker',     to: 'cicd',         clan: 'devops' },
+      { from: 'iac',        to: 'semgrep',      clan: 'devops' },
+      { from: 'semgrep',    to: 'monitoring',   clan: 'devops' },
+      { from: 'cicd',       to: 'monitoring',   clan: 'devops' },
+      { from: 'monitoring', to: 'k8s',          clan: 'devops' },
+
+      { from: 'javascript', to: 'react',        clan: 'code' },
+      { from: 'javascript', to: 'python-backend', clan: 'code' },
+      { from: 'react',      to: 'postgres',     clan: 'code' },
+      { from: 'python-backend', to: 'scraping', clan: 'code' },
+      { from: 'postgres',   to: 'node-fullstack', clan: 'code' },
+      { from: 'scraping',   to: 'node-fullstack', clan: 'code' },
+      { from: 'node-fullstack', to: 'threejs',  clan: 'code' },
+
+      { from: 'figma',      to: 'growth',       clan: 'ai' },
+      { from: 'growth',     to: 'agile',        clan: 'ai' },
+      { from: 'growth',     to: 'genai',        clan: 'ai' },
+      { from: 'agile',      to: 'rag',          clan: 'ai' },
+      { from: 'rag',        to: 'bmad',         clan: 'ai' },
+      { from: 'genai',      to: 'bmad',         clan: 'ai' },
+      { from: 'bmad',       to: 'ai-nexus',     clan: 'ai' },
+    ];
+
+    function hexToRgb(hex) {
+      if (!hex) return '56, 189, 248';
+      hex = hex.replace('#', '');
+      if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+      const num = parseInt(hex, 16);
+      return `${(num >> 16) & 255}, ${(num >> 8) & 255}, ${num & 255}`;
+    }
+
+    nodes.forEach(node => {
+      node.style.left = node.dataset.x + 'px';
+      node.style.top  = node.dataset.y + 'px';
+      const color = node.dataset.color || '#38bdf8';
+      node.style.setProperty('--node-color', color);
+      node.style.setProperty('--node-color-rgb', hexToRgb(color));
+    });
+
+    function getCenter(el) {
+      if (el === nexus) return { x: 15 + 50, y: 295 + 50 }; // left+50, top+50
+      return { x: parseFloat(el.dataset.x), y: parseFloat(el.dataset.y) };
+    }
+
+    function drawLines() {
+      svg.innerHTML = '';
+      const all = { nexus, ...Object.fromEntries(nodes.map(n => [n.dataset.id, n])) };
+      connections.forEach(conn => {
+        const f = all[conn.from], t = all[conn.to];
+        if (!f || !t) return;
+        const p1 = getCenter(f), p2 = getCenter(t);
+        const dx = p2.x - p1.x;
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', `M${p1.x},${p1.y} C${p1.x + dx*0.45},${p1.y} ${p1.x + dx*0.55},${p2.y} ${p2.x},${p2.y}`);
+        path.setAttribute('class', `st-conn st-conn--${conn.clan}`);
+        svg.appendChild(path);
+      });
+    }
+
+    filters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filters.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const f = btn.dataset.filter;
+        nodes.forEach(n => {
+          n.classList.toggle('is-dimmed', f !== 'all' && n.dataset.clan !== f);
+        });
+        document.querySelectorAll('.st-conn').forEach(l => {
+          l.style.opacity = (f === 'all' || l.classList.contains(`st-conn--${f}`) || l.classList.contains(`st-conn--nexus-${f}`)) ? '1' : '0.06';
+        });
+      });
+    });
+
+    function openModal(data) {
+      const card = modal.querySelector('.st-modal__card');
+      const color = data.color || '#38bdf8';
+      card.style.setProperty('--modal-color', color);
+      card.style.setProperty('--modal-color-rgb', hexToRgb(color));
+
+      document.getElementById('stModalClan').textContent = (data.clan || 'SKILL').toUpperCase();
+      document.getElementById('stModalTitle').textContent = data.title || '';
+      document.getElementById('stModalSub').textContent = data.subtitle || '';
+      document.getElementById('stModalPct').textContent = (data.level || 50) + '%';
+
+      const bar = document.getElementById('stModalBar');
+      bar.style.width = '0%';
+      setTimeout(() => { bar.style.width = (data.level || 50) + '%'; }, 50);
+
+      document.getElementById('stModalDesc').textContent = data.desc || '';
+
+      const iconWrap = document.getElementById('stModalIconWrap');
+      iconWrap.innerHTML = `<iconify-icon icon="${data.icon || 'simple-icons:devdotto'}"></iconify-icon>`;
+      if (window.Iconify) window.Iconify.scan(iconWrap);
+
+      const skillsCont = document.getElementById('stModalSkills');
+      skillsCont.innerHTML = '';
+      (data.skills || '').split(',').forEach(s => {
+        const tag = document.createElement('span');
+        tag.className = 'st-modal__tag';
+        tag.textContent = s.trim();
+        skillsCont.appendChild(tag);
+      });
+
+      const projCont = document.getElementById('stModalProjects');
+      projCont.innerHTML = '';
+      (data.projects || '').split(',').forEach(p => {
+        const tag = document.createElement('span');
+        tag.className = 'st-modal__tag st-modal__tag--project';
+        tag.innerHTML = `<iconify-icon icon="simple-icons:github" style="vertical-align:-2px;margin-right:4px;"></iconify-icon>${p.trim()}`;
+        projCont.appendChild(tag);
+      });
+
+      modal.classList.add('is-active');
+      modal.removeAttribute('aria-hidden');
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    document.getElementById('stModalClose').addEventListener('click', closeModal);
+    document.getElementById('stModalBackdrop').addEventListener('click', closeModal);
+    window.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    nodes.forEach(n => n.addEventListener('click', () => openModal(n.dataset)));
+    if (nexus) nexus.addEventListener('click', () => openModal(nexus.dataset));
+
+    drawLines();
+    window.addEventListener('load', drawLines);
+    setTimeout(drawLines, 200);
+    window.addEventListener('resize', drawLines);
+  })();
+
+  </script>
+</body>
+</html>
