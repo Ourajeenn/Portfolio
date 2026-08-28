@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PORTFOLIO — JEAN-ROSE KOUADJO OURA (OURAJEENN)
+   PORTFOLIO — JEAN-ROSE OURA (OURAJEENN)
    Interactive Scripts: Dark/Light Mode, Nav, Tabs, Forms
    ========================================================================== */
 
