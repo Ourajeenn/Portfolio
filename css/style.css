@@ -837,6 +837,28 @@ h1, h2, h3, h4, h5, h6 {
   gap: 10px;
 }
 
+/* CV Preview grid */
+.resume-frame-wrap {
+  width: min(980px, 100%);
+  margin: 26px auto 0;
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-xl);
+  background: var(--bg-card);
+  box-shadow: var(--glow-cyan);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.resume-iframe {
+  width: 100%;
+  min-height: min(780px, 70vh);
+  height: 680px;
+  border: 0;
+  border-radius: var(--r-lg);
+  background: var(--bg-card);
+  display: block;
+}
+
 /* Personality Traits & Passions Grid */
 .traits-grid {
   display: grid;
