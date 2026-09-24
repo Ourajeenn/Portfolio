@@ -119,7 +119,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Contact Form Feedback
+  // 6. CV Modal
+  const cvModal = document.getElementById('cvModal');
+  const cvModalTriggers = document.querySelectorAll('[data-open-cv-modal]');
+  const cvModalClose = document.querySelector('.cv-modal__close');
+  const cvModalBackdrop = document.querySelector('[data-close-cv-modal]');
+
+  const openCvModal = () => {
+    if (!cvModal) return;
+    cvModal.classList.add('is-open');
+    cvModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+  };
+
+  const closeCvModal = () => {
+    if (!cvModal) return;
+    cvModal.classList.remove('is-open');
+    cvModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  };
+
+  cvModalTriggers.forEach(button => {
+    button.addEventListener('click', openCvModal);
+  });
+
+  if (cvModalClose) cvModalClose.addEventListener('click', closeCvModal);
+  if (cvModalBackdrop) cvModalBackdrop.addEventListener('click', closeCvModal);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && cvModal && cvModal.classList.contains('is-open')) {
+      closeCvModal();
+    }
+  });
+
+  // 7. Contact Form Feedback
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
@@ -149,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Footer Year Update
+  // 8. Footer Year Update
   const footerYear = document.getElementById('footerYear');
   if (footerYear) {
     footerYear.textContent = new Date().getFullYear();

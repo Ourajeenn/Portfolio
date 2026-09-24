@@ -58,7 +58,7 @@
           </a>
 
           <!-- Pinterest (Icône seule) -->
-          <a href="https://fr.pinterest.com/jeanrosek17/" target="_blank" rel="noopener noreferrer" class="nav__icon-btn" title="Pinterest (@jeanrosek17)" aria-label="Pinterest">
+          <a href="https://fr.pinterest.com/ourajeenn/_created/" target="_blank" rel="noopener noreferrer" class="nav__icon-btn" title="Pinterest (@ourajeenn)" aria-label="Pinterest">
             <iconify-icon icon="simple-icons:pinterest"></iconify-icon>
           </a>
         </div>
@@ -101,10 +101,10 @@
             </p>
 
             <div class="hero__actions">
-              <a href="https://cvdesignr.com/p/kRaKE4Rr5NjOy9Q" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <button type="button" class="btn btn-primary cv-modal-trigger" data-open-cv-modal>
                 <iconify-icon icon="lucide:download"></iconify-icon>
                 <span>Afficher mon CV</span>
-              </a>
+              </button>
               <a href="#contact" class="btn btn-ghost">
                 <iconify-icon icon="lucide:mail"></iconify-icon>
                 <span>Me contacter</span>
@@ -192,14 +192,14 @@
                 <iconify-icon icon="simple-icons:linkedin"></iconify-icon>
                 <span>LinkedIn</span>
               </a>
-              <a href="https://fr.pinterest.com/jeanrosek17/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Pinterest">
+              <a href="https://fr.pinterest.com/ourajeenn/_created/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Pinterest">
                 <iconify-icon icon="simple-icons:pinterest"></iconify-icon>
                 <span>Pinterest</span>
               </a>
-              <a href="https://cvdesignr.com/p/kRaKE4Rr5NjOy9Q" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <button type="button" class="btn btn-primary cv-modal-trigger" data-open-cv-modal>
                 <iconify-icon icon="lucide:file-text"></iconify-icon>
                 <span>Voir le CV</span>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -231,15 +231,22 @@
           </div>
         </div>
 
-        <!-- ==================== CV Public et synchronisé ==================== -->
+        <!-- ==================== CV Modal ==================== -->
         <div style="margin-top:60px;" class="reveal">
           <div class="section-header section-header--center">
             <div class="section-label">CV en ligne</div>
             <h2 class="section-title"><span class="text-gradient">Mon Curriculum Vitae</span></h2>
-            <p class="section-desc">Le CV du portfolio est livré depuis le CV public CVDesignR pour rester synchronisé à chaque mise à jour.</p>
           </div>
-          <div class="resume-frame-wrap">
-            <iframe class="resume-iframe" src="https://cvdesignr.com/p/kRaKE4Rr5NjOy9Q" title="CV Jean-Rose OURA" loading="lazy"></iframe>
+
+          <div class="cv-cta__card">
+            <div class="cv-cta__icon">
+              <iconify-icon icon="lucide:file-text"></iconify-icon>
+            </div>
+
+            <button type="button" class="btn btn-primary cv-modal-trigger" data-open-cv-modal>
+              <iconify-icon icon="lucide:eye"></iconify-icon>
+              <span>Voir CV</span>
+            </button>
           </div>
         </div>
 
@@ -1311,7 +1318,7 @@
               <div class="contact__method-icon"><iconify-icon icon="simple-icons:pinterest"></iconify-icon></div>
               <div>
                 <div class="contact__method-lbl">Pinterest</div>
-                <a href="https://fr.pinterest.com/jeanrosek17/" target="_blank" rel="noopener noreferrer" class="contact__method-val" style="color:var(--cyan);">@jeenn-ross raoul</a>
+                <a href="https://fr.pinterest.com/ourajeenn/_created/" target="_blank" rel="noopener noreferrer" class="contact__method-val" style="color:var(--cyan);">@ourajeenn</a>
               </div>
             </div>
 
@@ -1324,10 +1331,10 @@
             </div>
 
             <div style="padding-top:16px;border-top:1px solid var(--border);">
-              <a href="https://cvdesignr.com/p/kRaKE4Rr5NjOy9Q" target="_blank" rel="noopener noreferrer" class="btn btn-glow-cv" style="width:100%;justify-content:center;">
+              <button type="button" class="btn btn-glow-cv cv-modal-trigger" data-open-cv-modal style="width:100%;justify-content:center;">
                 <iconify-icon icon="lucide:download"></iconify-icon>
                 <span>Afficher mon CV</span>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -1407,7 +1414,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.pinterest.com/jeennrossraoul/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;">
+              <a href="https://fr.pinterest.com/ourajeenn/_created/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;">
                 <iconify-icon icon="simple-icons:pinterest"></iconify-icon> Pinterest
               </a>
             </li>
@@ -1419,9 +1426,9 @@
           <div class="footer__col-title">Actions</div>
           <ul>
             <li>
-              <a href="https://cvdesignr.com/p/kRaKE4Rr5NjOy9Q" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:6px;color:var(--cyan);">
+              <button type="button" class="cv-modal-trigger" data-open-cv-modal style="display:flex;align-items:center;gap:6px;color:var(--cyan);background:none;border:none;padding:0;cursor:pointer;font:inherit;">
                 <iconify-icon icon="lucide:download"></iconify-icon> Afficher mon CV
-              </a>
+              </button>
             </li>
             <li>
               <a href="#contact" style="display:flex;align-items:center;gap:6px;">
@@ -1439,6 +1446,22 @@
       </div>
     </div>
   </footer>
+
+  <div class="cv-modal cv-modal--clean" id="cvModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="cv-modal__backdrop" data-close-cv-modal></div>
+    <div class="cv-modal__panel" role="document" aria-label="CV de Jean-Rose OURA">
+      <div class="cv-modal__toolbar">
+        <a class="cv-modal__download" href="https://cvdesignr.com/p/BQa7dAkdEV9MGgp" target="_blank" rel="noopener noreferrer" aria-label="Télécharger le CV">
+          <iconify-icon icon="lucide:download"></iconify-icon>
+          <span>Télécharger</span>
+        </a>
+        <button type="button" class="cv-modal__close" aria-label="Fermer le CV">×</button>
+      </div>
+      <div class="cv-modal__body">
+        <iframe class="cv-modal__frame" src="https://cvdesignr.com/p/BQa7dAkdEV9MGgp" title="CV Jean-Rose OURA" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
