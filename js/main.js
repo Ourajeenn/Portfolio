@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cvModalClose = document.querySelector('.cv-modal__close');
   const cvModalBackdrop = document.querySelector('[data-close-cv-modal]');
 
-  const openCvModal = () => {
+  const openCvModal = (event) => {
+    if (event && event.preventDefault) event.preventDefault();
     if (!cvModal) return;
     cvModal.classList.add('is-open');
     cvModal.setAttribute('aria-hidden', 'false');
