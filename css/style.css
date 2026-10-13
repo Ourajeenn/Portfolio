@@ -602,17 +602,21 @@ body.modal-open {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 16px 0;
-  transition: all var(--transition-base);
+  padding: 18px 0 0;
+  transition: padding var(--transition-base), transform var(--transition-base);
+}
+
+.nav .container {
+  max-width: 1380px;
+  transition: max-width var(--transition-base), padding var(--transition-base);
 }
 
 .nav.is-scrolled {
-  background: var(--nav-bg);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid var(--border);
-  padding: 10px 0;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+  padding-top: 20px;
+}
+
+.nav.is-scrolled .container {
+  max-width: 1280px;
 }
 
 .nav__inner {
@@ -620,6 +624,24 @@ body.modal-open {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+  width: 100%;
+  background: rgba(9, 13, 24, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+  padding: 16px 22px;
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.35s ease;
+}
+
+.nav.is-scrolled .nav__inner {
+  background: rgba(15, 23, 42, 0.88);
+  border-color: rgba(56, 189, 248, 0.2);
+  border-radius: 9999px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.28);
+  transform: translateY(0) scale(1);
+  padding: 12px 18px;
 }
 
 .nav__logo {
